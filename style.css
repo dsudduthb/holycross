@@ -1,0 +1,67 @@
+    body {
+      background-color: #f4ebdc;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+  /* Add a black background color to the top navigation */
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: #933c3c;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ffa3a3;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #602727;
+  color: white;
+}
+
+.nav-icon {
+    height: 40px;            /* consistent icon size */
+    width: auto;
+    margin-right: 10px;      /* space between icon and buttons */
+}
+
+.banner-img {
+    width: 100%;      /* span entire page width */
+    height: auto;     /* keep proportions */
+    display: block;   /* remove inline spacing */
+}
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    text-decoration: none;
+    /* text-shadow: 2px 2px 6px rgba(0,0,0,0.7); */
+}
