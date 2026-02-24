@@ -1,10 +1,14 @@
 <template>
-  <div>
-    <nav>
+  <v-app class="app-background">
+    <v-main>
+       <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
 
     <router-view />
-  </div>
+    </v-main>
+  </v-app>
 </template>
+<style>
+</style>
