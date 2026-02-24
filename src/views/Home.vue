@@ -1,3 +1,6 @@
+<script>
+    import landscape from "../assets/church_landscape.png"
+</script>
 <template>
-    <v-card>hello, world</v-card>
+    <img :src="landscape"/>
 </template>
