@@ -6,7 +6,7 @@
   <v-app class="app-background">
     <AppNavbar />
     <v-main>
-      <v-container style="max-width: 33%;">
+      <v-container style="max-width: 50%;">
         <router-view />
       </v-container>
     </v-main>
