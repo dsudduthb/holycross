@@ -16,9 +16,9 @@
     <div class="d-flex ga-4">
       <router-link class="nav-link" to="/">HOME</router-link>
       <router-link class="nav-link" to="/about">ABOUT</router-link>
-      <router-link class="nav-link" to="/about">WORSHIP</router-link>
-      <router-link class="nav-link" to="/about">OUR PARISH</router-link>
-      <router-link class="nav-link" to="/about">STAFF</router-link>
+      <router-link class="nav-link" to="/worship">WORSHIP</router-link>
+      <router-link class="nav-link" to="/our_parish">OUR PARISH</router-link>
+      <router-link class="nav-link" to="/staff">STAFF</router-link>
     </div>
   </v-card>
 </template>
@@ -34,13 +34,5 @@
 .nav-link:hover {
   text-decoration: underline;
   color: #993939;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
 }
 </style>

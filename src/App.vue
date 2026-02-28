@@ -4,9 +4,11 @@
 
 <template>
   <v-app class="app-background">
+    <AppNavbar />
     <v-main>
-      <AppNavbar />
-      <router-view />
+      <v-container style="max-width: 33%;">
+        <router-view />
+      </v-container>
     </v-main>
   </v-app>
 </template>
