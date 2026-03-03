@@ -1,5 +1,12 @@
 <script setup>
   import mass_icon from '../assets/eucharist.png'
+  import { useRouter } from 'vue-router'
+
+  const router = useRouter()
+
+  function goToWorship() {
+    router.push('/worship')
+  }
 </script>
 <template>
   <div>
@@ -22,7 +29,8 @@
             +Traditional Liturgy+
           </div>
 
-          <v-btn class="mt-10 mb-10" 
+          <v-btn @click="goToWorship()"
+            class="mt-10 mb-10" 
             color="white" 
             style="font-family: Georgia, 'Times New Roman', Times, serif; {left: '50%', transform:'translateX(-50%)'}">
             Join Us in Worship
