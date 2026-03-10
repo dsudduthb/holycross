@@ -6,12 +6,17 @@
   <v-card
     class="navbar pa-5 bg-white text-white rounded-0 d-flex flex-column align-center"
   >
-    <img
-      :src="holyCross"
-      alt="Holy Cross"
-      width="70"
-      class="mb-3"
-    />
+    <div class="logo-container">
+      <div class="holy_cross_logo">Holy</div>
+
+      <img
+        :src="holyCross"
+        alt="Holy Cross"
+        width="70"
+      />
+
+      <div class="holy_cross_logo">Cross</div>
+    </div>
 
     <div class="d-flex ga-4">
       <router-link class="nav-link" to="/">HOME</router-link>
@@ -34,5 +39,21 @@
 .nav-link:hover {
   text-decoration: underline;
   color: #993939;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.holy_cross_logo {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  color:black;
+  font-family: "Celtic Font";
+  font-size: x-large;
 }
 </style>

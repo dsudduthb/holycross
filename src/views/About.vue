@@ -111,7 +111,7 @@ function goToWorship(){
                 </v-col>
                 <v-col cols="6">
                     <div class="pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
-                        Anglicanism
+                        Anglican
                     </div>                    
                     <div  class="pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
                         Anglicanism is a form of Catholic Christianity expressed through the traditions of the English Church. We emphasize scripture,
