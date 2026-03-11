@@ -1,27 +1,10 @@
-<script setup lang="ts">
-import landscape from "../assets/church_landscape.png"
-</script>
-
-<template>
-  <div
-    class="home-background"
-    :style="{ backgroundImage: `url(${landscape})` }"
-  >
-    <div class="home-content">
-      <h1>Welcome Home</h1>
-    </div>
-  </div>
-</template>
-
-<style scoped>
-.home-background {
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
-
-.home-content {
-  padding-top: 120px; /* prevent overlap with fixed navbar */
+@font-face {
+  font-family: "Celtic Font";
+  src: url("./assets/fonts/celtic_font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-</style>
