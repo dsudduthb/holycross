@@ -29,24 +29,24 @@ function goToWorship(){
         <div class="mt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
             <v-row>
                 <v-col>
-                    <v-card class="card pa-7" color="grey" @click="scrollTo('christian-card')">
+                    <v-card class="card pa-7" color="secondary" @click="scrollTo('christian-card')">
                         Christian
                     </v-card>
                 </v-col>
                 <v-col>
-                    <v-card class="card pa-7" color="grey" @click="scrollTo('catholic-card')">
+                    <v-card class="card pa-7" color="secondary" @click="scrollTo('catholic-card')">
                         Catholic
                     </v-card>
                 </v-col>
             </v-row>
             <v-row>
                 <v-col>
-                    <v-card class="card pa-7" color="grey" @click="scrollTo('anglican-card')">
+                    <v-card class="card pa-7" color="secondary" @click="scrollTo('anglican-card')">
                         Anglican
                     </v-card>
                 </v-col>
                 <v-col>
-                    <v-card class="card pa-7" color="grey">
+                    <v-card class="card pa-7" color="secondary">
                         Continuuing
                     </v-card>
                 </v-col>
@@ -85,15 +85,6 @@ function goToWorship(){
                         We seek to live the Apostolic faith as it has been passed down through scripture and tradition.
                         The aim of the Catholic Church is unity with our Lord, Jesus Christ. The height of the Catholic worship is the mass, 
                         which we participate in every Sunday morning at 10AM.
-                    </div>
-
-                    <div class="text-center">
-                        <v-btn @click="goToWorship()"
-                            class="mt-10 mb-10" 
-                            color="white" 
-                            style="font-family: Georgia, 'Times New Roman', Times, serif;">
-                            Join Us in Worship
-                        </v-btn>
                     </div>
                 </v-col>
                 <v-col cols="6">
