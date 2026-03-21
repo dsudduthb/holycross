@@ -14,7 +14,8 @@ export default createVuetify({
       customTheme: {
         colors: {
           background: '#ffffff',
-          primary: '#993939'
+          primary: '#993939',
+          secondary: '#6e6e6e'
         }
       }
     }

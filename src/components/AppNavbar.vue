@@ -1,5 +1,13 @@
 <script setup>
     import holyCross from '../assets/holy_cross.png'
+
+    import { useRouter } from 'vue-router'
+
+    const router = useRouter()
+
+    function goToHome(){
+      router.push('/')
+    }
 </script>
 
 <template>
@@ -13,6 +21,7 @@
         :src="holyCross"
         alt="Holy Cross"
         width="70"
+        @click="goToHome"
       />
 
       <div class="holy_cross_logo">Cross</div>
