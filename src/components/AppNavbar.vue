@@ -14,8 +14,12 @@
 
 <template>
   <v-card
-      class="navbar pa-5 rounded-0 d-flex flex-column align-center elevation-0"
-      :class="isHome ? 'bg-transparent' : 'bg-white navbar--solid'"
+    class="navbar pa-5 rounded-0 d-flex flex-column align-center elevation-0"
+    :class="{
+      'bg-transparent': isHome,
+      'navbar--solid bg-white': !isHome,
+      'navbar--absolute': isHome
+    }"
   >
     <div class="logo-container">
       <div class="holy_cross_logo">Holy</div>
@@ -69,13 +73,17 @@
   font-size: x-large;
 }
 
-.navbar {
-  /* background-color: transparent !important;
-  box-shadow: none !important; */
+.navbar--absolute {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+}
+
+.navbar--solid {
+  position: relative; /* or static */
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
 }
 </style>
