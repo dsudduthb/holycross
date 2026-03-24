@@ -1,9 +1,11 @@
 <script setup>
     import holyCross from '../assets/holy_cross.png'
-
-    import { useRouter } from 'vue-router'
+    import { useRouter, useRoute } from 'vue-router'
+    import { computed } from 'vue'
 
     const router = useRouter()
+    const route = useRoute()
+    const isHome = computed(() => route.path === '/')
 
     function goToHome(){
       router.push('/')
@@ -12,7 +14,8 @@
 
 <template>
   <v-card
-    class="navbar pa-5 bg-white text-white rounded-0 d-flex flex-column align-center"
+      class="navbar pa-5 rounded-0 d-flex flex-column align-center elevation-0"
+      :class="isHome ? 'bg-transparent' : 'bg-white navbar--solid'"
   >
     <div class="logo-container">
       <div class="holy_cross_logo">Holy</div>
@@ -64,5 +67,15 @@
   color:black;
   font-family: "Celtic Font";
   font-size: x-large;
+}
+
+.navbar {
+  /* background-color: transparent !important;
+  box-shadow: none !important; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 </style>

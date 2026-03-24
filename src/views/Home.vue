@@ -2,6 +2,7 @@
   import mass_icon from '../assets/eucharist.png'
   import what_anglican from '../assets/save_thy_people.jpg'
   import apck from '../assets/APCK_seal.png' 
+  import parish from '../assets/church_landscape2.png'
 
   import { useRouter } from 'vue-router'
 
@@ -16,18 +17,20 @@
   }
 </script>
 <template>
+<AppNavbar />
+<v-img :src="parish">
 
-<v-container style="max-width: 50%;">
+</v-img>
+
+<!-- <v-container style="max-width: 50%;">
     <div class="mt-10 mb-10">
       <h1 class="title">Traditional Anglicanism</h1>
       <h2 class="subtext">in Oklahoma City</h2>
     </div>
 
-    <!--The invitation to worship card-->
     <div>
       <v-card color="primary" class="d-flex">
 
-        <!--The Eucharist icon for the card-->
         <v-img :src="mass_icon" />
 
         <div class="pa-5 text-center">
@@ -54,8 +57,7 @@
       
 
     </div>  
-  </v-container>
-  <v-container fluid class="px-0">
+  </v-container> -->
     <v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
       <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
       <v-row justify="center" class="pa-8">
@@ -103,7 +105,6 @@
         </v-col>
       </v-row>
     </v-card>
-</v-container>
 </template>
 <style>
 .schedule-header{
