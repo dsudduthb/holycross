@@ -1,5 +1,5 @@
 <script setup>
-  import mass_icon from '../assets/eucharist.png'
+  import come_worhsip from '../assets/sanctuary.jpg'
   import what_anglican from '../assets/save_thy_people.jpg'
   import apck from '../assets/APCK_seal.png' 
   import parish from '../assets/church_landscape2.png'
@@ -18,46 +18,37 @@
 </script>
 <template>
 <AppNavbar />
-<v-img :src="parish">
+<v-img :src="parish"/>
 
-</v-img>
+<v-card color="primary" class="pa-10" rounded="0">
+  <v-row align="center" justify="center">
+    <v-col cols="auto">
+      <div class="d-flex align-center justify-center">
 
-<!-- <v-container style="max-width: 50%;">
-    <div class="mt-10 mb-10">
-      <h1 class="title">Traditional Anglicanism</h1>
-      <h2 class="subtext">in Oklahoma City</h2>
-    </div>
+        <v-img
+          :src="come_worhsip"
+          width="500"
+          class="mr-8"
+          cover
+          style="left: -10%;"
+        />
 
-    <div>
-      <v-card color="primary" class="d-flex">
-
-        <v-img :src="mass_icon" />
-
-        <div class="pa-5 text-center">
-
-          <div style="font-family: 'Times New Roman', Times, serif; font-size: 150%; text-align: center;">
-            +Traditional Liturgy+
+        <div class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+          <div style="font-weight: bold; font-size:250%;">+Traditional Liturgy+</div>
+          <div style="font-size: 150%;">Come Worship with Us</div>
+          <v-btn @click="goToWorship" class="mt-5" style="color: black;" flat rounded="0">How Do You Worship?</v-btn>
+          <div style="text-align: center;" class="mt-5">
+            "A man can no more diminish God's glory by refusing <br>
+            to worship Him than a lunatic can put out the sun by <br>
+            scribbling the word, 'darkness' on the walls of his cell."
+            <br>- C.S. Lewis
           </div>
-
-          <v-btn @click="goToWorship()"
-            class="mt-10 mb-10" 
-            color="white" 
-            style="font-family: Georgia, 'Times New Roman', Times, serif;">
-            Join Us in Worship
-          </v-btn>
-
-          <div style="font-family: 'Times New Roman', Times, serif; text-align: center;">
-            "O COME, let us sing unto the LORD;<br>
-            let us heartily rejoice<br> 
-            in the strength of our salvation.""
-          </div>
-
         </div>
-      </v-card>
-      
+      </div>
+    </v-col>
+  </v-row>
+</v-card>
 
-    </div>  
-  </v-container> -->
     <v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
       <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
       <v-row justify="center" class="pa-8">
