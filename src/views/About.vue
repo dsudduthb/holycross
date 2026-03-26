@@ -6,6 +6,10 @@ import CREED from '../assets/creed.txt?raw'
 import creed_image from '../assets/priest_kneeling_mass.png'
 import anglicanism_image from '../assets/washington_cathedral.png'
 import catholicism_image from '../assets/augustine_of_canterbury.png'
+import agnus_dei from '../assets/agnus_dei.png'
+import ctbry_cross from '../assets/canterbury_cross.png'
+import apck from '../assets/APCK_alt.png'
+import mitre from '../assets/mitre.png'
 
 const router = useRouter()
 
@@ -21,36 +25,32 @@ function goToWorship(){
 </script>
 
 <template>
+<v-container style="width: 60%;">
     <div>
         <div class="mt-5">
             <h2 class="subtext">"One, Holy, Catholic, and Apostolic Church"</h2>
         </div>
 
-        <div class="mt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+        <div class="mt-5 mb-10" style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
             <v-row>
-                <v-col>
-                    <v-card class="card pa-7" color="secondary" @click="scrollTo('christian-card')">
-                        Christian
-                    </v-card>
+                <v-col class="text-center">
+                    <v-img :src="agnus_dei" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('christian-card')"/>
+                    <div>Christian</div>
                 </v-col>
-                <v-col>
-                    <v-card class="card pa-7" color="secondary" @click="scrollTo('catholic-card')">
-                        Catholic
-                    </v-card>
+                <v-col class="text-center">
+                    <v-img :src="mitre" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('catholic-card')"/>
+                    <div>Catholic</div>
+                </v-col>
+                <v-col class="text-center">
+                    <v-img :src="ctbry_cross" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('anglican-card')"/>
+                    <div>Anglican</div>
+                </v-col>
+                <v-col class="text-center">
+                    <v-img :src="apck" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('continuing-card')"/>
+                    <div>Continuing</div>
                 </v-col>
             </v-row>
-            <v-row>
-                <v-col>
-                    <v-card class="card pa-7" color="secondary" @click="scrollTo('anglican-card')">
-                        Anglican
-                    </v-card>
-                </v-col>
-                <v-col>
-                    <v-card class="card pa-7" color="secondary">
-                        Continuuing
-                    </v-card>
-                </v-col>
-            </v-row>
+            <v-divider></v-divider>
         </div>
 
         <!--CREED CARD-->
@@ -61,10 +61,10 @@ function goToWorship(){
                     <v-img :src="creed_image" cover height="100%"/>
                 </v-col>
                 <v-col cols="6">
-                    <div class="pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
+                    <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         THE NICENE CREED
                     </div>
-                    <div  class="pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
+                    <div  class="info-card-text pl-5 pr-5 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
                         "{{CREED}}"
                     </div>
                 </v-col>
@@ -76,10 +76,10 @@ function goToWorship(){
             <v-card color="primary">
                 <v-row no-gutters>
                 <v-col cols="6">
-                    <div class="pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
+                    <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Catholic
                     </div>                    
-                    <div  class="pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
+                    <div  class="info-card-text pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
                         The word "Catholic" comes from a greek word meaning "apart of the whole." The Catholic religion therefore can be was described as 
                         Saint Vincent did: "what has been believed everywhere, always, and by all."
                         We seek to live the Apostolic faith as it has been passed down through scripture and tradition.
@@ -101,10 +101,10 @@ function goToWorship(){
                     <v-img :src="anglicanism_image" cover height="100%"/>
                 </v-col>
                 <v-col cols="6">
-                    <div class="pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
+                    <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Anglican
                     </div>                    
-                    <div  class="pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
+                    <div  class="info-card-text pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
                         Anglicanism is a form of Catholic Christianity expressed through the traditions of the English Church. We emphasize scripture,
                         tradition, and reason as the "three-legged stool" of the Church. Our faith is summarized by the Creed of the first Council of Nicaea
                         and it is practiced in that beautiful tradition charished and passed down since before 314AD, when the first Christians arrived in what is now England in 
@@ -118,5 +118,28 @@ function goToWorship(){
                 </v-row>
             </v-card>
         </div>
+        <div class="pt-5" id="continuing-card">
+            <v-card color="primary">
+                <v-row no-gutters>
+                <v-col cols="6">
+                    <v-img :src="anglicanism_image" cover height="100%"/>
+                </v-col>
+                <v-col cols="6">
+                    <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
+                        Continuing Anglican
+                    </div>
+                </v-col>
+                </v-row>
+            </v-card>
+        </div>
     </div>
+</v-container>
 </template>
+<style>
+.info-card-title{
+    font-size: 200%;
+}
+.info-card-text{
+    font-size: 120%;
+}
+</style>

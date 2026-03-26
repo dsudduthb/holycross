@@ -13,7 +13,7 @@ export default createVuetify({
     themes: {
       customTheme: {
         colors: {
-          background: '#ffffff',
+          background: '#e8e0d1',
           primary: '#993939',
           secondary: '#6e6e6e'
         }

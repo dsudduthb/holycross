@@ -17,7 +17,7 @@
     class="navbar pa-5 rounded-0 d-flex flex-column align-center elevation-0"
     :class="{
       'bg-transparent': isHome,
-      'navbar--solid bg-white': !isHome,
+      'navbar--solid bg-background': !isHome,
       'navbar--absolute': isHome
     }"
   >
@@ -84,6 +84,5 @@
 .navbar--solid {
   position: relative; /* or static */
   width: 100%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
 }
 </style>
