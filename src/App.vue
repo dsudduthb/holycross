@@ -1,5 +1,6 @@
 <script setup lang="ts">
   import AppNavbar from './components/AppNavbar.vue'
+  import BackToTop from './components/BackToTop.vue'
 </script>
 
 <template>
@@ -7,6 +8,7 @@
     <AppNavbar />
     <v-main>
         <router-view />
+        <BackToTop />
     </v-main>
   </v-app>
 </template>
