@@ -18,7 +18,7 @@ const scrollToTop = () => {
 </template>
 <style>
 .back-to-top {
-  position: fixed;
+  position: fixed !important;
   bottom: 24px;
   right: 24px;
   z-index: 1000;
