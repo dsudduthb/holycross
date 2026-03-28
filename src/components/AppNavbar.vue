@@ -5,7 +5,9 @@
 
     const router = useRouter()
     const route = useRoute()
-    const isHome = computed(() => route.path === '/')
+    const isHome = computed(() => (
+      route.path === '/' || route.path === '/our_parish'
+    ))
 
     function goToHome(){
       router.push('/')
