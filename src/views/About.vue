@@ -22,7 +22,11 @@ function scrollTo(id) {
 }
 
 function goToWorship(){
-    router.push('/worship')
+    router.push('/worship') 
+}
+
+function goto_apck_site(){
+    window.open("https://www.anglicanpck.org/", "_blank");
 }
 </script>
 
