@@ -42,6 +42,8 @@
       <router-link class="nav-link" to="/worship">WORSHIP</router-link>
       <router-link class="nav-link" to="/our_parish">OUR PARISH</router-link>
       <router-link class="nav-link" to="/staff">STAFF</router-link>
+      <router-link class="nav-link" to="/calendar">CALENDAR</router-link>
+      <router-link class="nav-link" to="/give">GIVE</router-link>
     </div>
   </v-card>
 </template>
