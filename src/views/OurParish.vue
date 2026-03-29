@@ -18,13 +18,13 @@ const modules = import.meta.glob('/src/assets/parish_life/*', {
 const images = Object.values(modules)
 </script>
 <template>
-<v-img :src="parish_photo2" cover>
-    <div class="text-h2 text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center;">
-       "One thing have I desired of the Lord, that will I seek after; 
-       that I may dwell in the house of the Lord all the days of my life, 
-       to behold the beauty of the Lord, and to enquire in his temple."<br>
-        - Psalm 27:4
-    </div>
+<v-img :src="parish_photo2" cover class="hero-image">
+  <div class="hero-text">
+    "One thing have I desired of the Lord, that will I seek after; 
+    that I may dwell in the house of the Lord all the days of my life, 
+    to behold the beauty of the Lord, and to enquire in his temple."<br>
+    - Psalm 27:4
+  </div>
 </v-img>
 
 <v-container class="ma-10 mx-auto" width="50%">
@@ -126,5 +126,25 @@ const images = Object.values(modules)
   font-size: xx-large;
   font-style: italic;
   text-align: center;
+}
+.hero-image {
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80%;
+  max-width: 900px;
+
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+
+  padding: 20px;
 }
 </style>
