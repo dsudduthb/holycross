@@ -6,6 +6,7 @@ import eucharist_window from '../assets/building/eucharist.jpg'
 import window from '../assets/building/stained_glass.jpg'
 import cross_window from '../assets/building/sanctus_crux.jpg'
 import apck from '../assets/APCK_seal.png'
+import sanctuary from '../assets/building/sanctuary.jpg'
 
 const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
@@ -89,7 +90,27 @@ const images = Object.values(modules)
   </v-row>
 </v-container>
 
-<v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
+<v-container width="80%" class="mt-10 mb-10">
+  <v-divider>
+    <div class="about-text">
+      The Sanctuary
+    </div>
+  </v-divider>
+
+  <div class="d-flex justify-center mt-10">
+    <v-img 
+      :src="sanctuary" 
+      max-width="800"
+      class="mx-auto d-block"
+    >
+      <div class="text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: medium; top:5%;">
+       *(Crucifix Veiled for Lent)
+    </div>
+  </v-img>
+  </div>
+</v-container>
+
+<v-card  class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
     <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
     <v-row justify="center" class="pa-8">
         <v-col cols="auto">
