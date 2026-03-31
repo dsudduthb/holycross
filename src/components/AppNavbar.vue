@@ -12,6 +12,18 @@
     function goToHome(){
       router.push('/')
     }
+    import { useRouter, useRoute } from 'vue-router'
+    import { computed } from 'vue'
+
+    const router = useRouter()
+    const route = useRoute()
+    const isHome = computed(() => (
+      route.path === '/' || route.path === '/our_parish'
+    ))
+
+    function goToHome(){
+      router.push('/')
+    }
 </script>
 
 <template>
