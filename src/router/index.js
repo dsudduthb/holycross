@@ -4,6 +4,8 @@ import About from '../views/About.vue'
 import OurParish from '../views/OurParish.vue'
 import Staff from '../views/Staff.vue'
 import Worship from '../views/Worship.vue'
+import Calendar from '../views/Calendar.vue'
+import Give from '../views/Give.vue'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
     path: '/worship',
     name: 'Worship',
     component: Worship
+  },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    component: Calendar
+  },
+  {
+    path: '/give',
+    name: 'Give',
+    component: Give
   },
 ]
 
