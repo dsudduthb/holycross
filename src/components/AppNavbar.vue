@@ -20,11 +20,11 @@
     :class="{
       'bg-transparent': isHome,
       'navbar--solid bg-background': !isHome,
-      'navbar--absolute': isHome
+      'navbar--absolute': isHome,
     }"
   >
     <div class="logo-container">
-      <div class="holy_cross_logo">Holy</div>
+      <div class="holy_cross_logo" :class="{'nav-link--white' : isHome}">Holy</div>
 
       <img
         :src="holyCross"
@@ -33,17 +33,15 @@
         @click="goToHome"
       />
 
-      <div class="holy_cross_logo">Cross</div>
+      <div class="holy_cross_logo" :class="{'nav-link--white' : isHome}">Cross</div>
     </div>
 
     <div class="d-flex ga-4">
-      <router-link class="nav-link" to="/">HOME</router-link>
-      <router-link class="nav-link" to="/about">ABOUT</router-link>
-      <router-link class="nav-link" to="/worship">WORSHIP</router-link>
-      <router-link class="nav-link" to="/our_parish">OUR PARISH</router-link>
-      <router-link class="nav-link" to="/staff">STAFF</router-link>
-      <router-link class="nav-link" to="/calendar">CALENDAR</router-link>
-      <router-link class="nav-link" to="/give">GIVE</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/">HOME</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/about">ABOUT</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/worship">WORSHIP</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/our_parish">OUR PARISH</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/staff">STAFF</router-link>
     </div>
   </v-card>
 </template>
@@ -88,5 +86,9 @@
 .navbar--solid {
   position: relative; /* or static */
   width: 100%;
+}
+
+.nav-link--white{
+  color:white;
 }
 </style>
