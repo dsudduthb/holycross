@@ -8,7 +8,7 @@ import banner from '../assets/Eucharist-from-Side.jpg'
     </div>
 </v-img>
 
-<v-container class="ma-10 mx-auto" width="50%">
+<v-container class="ma-10 mx-auto" width="auto">
     <div class="about-text pa-10 ma-10">
         Scripture teaches us "thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind, and with all thy strength."
         Therefore we worship using all our senses. Even the space in which we come togethor is itself a pattern of worship.
@@ -17,10 +17,43 @@ import banner from '../assets/Eucharist-from-Side.jpg'
 
 <v-container width="80%">
     <v-divider>
-        <div class="about-text">
+        <div class="sacra-title" style="font-style: italic;">
             The Sacraments
         </div>
     </v-divider>
+</v-container>
+
+<v-container>
+  <v-row class="text-center" justify="center">
+    <v-col cols="auto">
+      <div class="sacra-title">Holy Communion</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+    <v-col cols="auto">
+      <div class="sacra-title">Baptism</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+    <v-col cols="auto">
+      <div class="sacra-title">Confirmation</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+    <v-col cols="auto">
+      <div class="sacra-title">Matrimony</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+    <v-col cols="auto">
+      <div class="sacra-title">Orders</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+    <v-col cols="auto">
+      <div class="sacra-title">Reconciliation</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+    <v-col cols="auto">
+      <div class="sacra-title">Unction</div>
+      <div class="sacra-text">...</div>
+    </v-col>
+  </v-row>
 </v-container>
 
   <v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
@@ -41,3 +74,14 @@ import banner from '../assets/Eucharist-from-Side.jpg'
     </v-row>
   </v-card>
 </template>
+<style>
+.sacra-title{
+    font-size: xx-large;
+    color: #742b2b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sacra-text{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+</style>
