@@ -118,6 +118,6 @@ function goto_apck_site(){
     font-family: 'Times New Roman', Times, serif;
 }
 .staff-img{
-    max-height: 90%;
+    max-height: auto;
 }
 </style>

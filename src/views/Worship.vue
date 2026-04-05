@@ -163,8 +163,187 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
   </div>
 </v-container>
 
-<v-container class="ma-10 mx-auto" width="auto">
-
+<v-container class="ma-10 mx-auto" width="50%">
+  <v-row>
+      <v-col col="auto">
+        <v-img :src="sanctuary" class="space-img"/>
+      </v-col>
+      <v-col col="auto">
+        <div class="space-title">The Sanctuary</div>
+        <v-divider></v-divider>
+        <div class="sacra-text">
+          Communion (aka the Eucharist) is the central act of 
+          Christian worship, in which Christ is truly 
+          present under the forms of bread and wine. 
+          In receiving Holy Communion, believers are 
+          nourished spiritually and drawn into deeper 
+          union with Christ and one another. We begin our liturgy
+          of the Eucharist (aka the Mass) at 10AM on Sundays.
+        </div>
+      </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="font" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Holy Water Font</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="baptistry" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Baptistry</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+    <v-row>
+      <v-col col="auto">
+        <v-img :src="stations" class="space-img"/>
+      </v-col>
+      <v-col col="auto">
+        <div class="space-title">The Stations of the Cross</div>
+        <v-divider></v-divider>
+        <div class="sacra-text">
+          Communion (aka the Eucharist) is the central act of 
+          Christian worship, in which Christ is truly 
+          present under the forms of bread and wine. 
+          In receiving Holy Communion, believers are 
+          nourished spiritually and drawn into deeper 
+          union with Christ and one another. We begin our liturgy
+          of the Eucharist (aka the Mass) at 10AM on Sundays.
+        </div>
+      </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="mary_altar" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Altar of Mary</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="bishop_chair" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Bishop's Chair</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="lamp" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Sanctuary Lamp</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="altar" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Altar</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="altar_crux" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Altar Crucifix</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="veiled_crux" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Veiled Crucifix</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        Communion (aka the Eucharist) is the central act of 
+        Christian worship, in which Christ is truly 
+        present under the forms of bread and wine. 
+        In receiving Holy Communion, believers are 
+        nourished spiritually and drawn into deeper 
+        union with Christ and one another. We begin our liturgy
+        of the Eucharist (aka the Mass) at 10AM on Sundays.
+      </div>
+    </v-col>
+  </v-row>
 </v-container>
 
   <v-card class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
@@ -224,5 +403,15 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
 
 .banner-overlay {
   background: rgba(0, 0, 0, 0.4);
+}
+
+.space-img{
+  max-height: auto;
+}
+
+.space-title{
+  font-size: xx-large;
+  color: #742b2b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 </style>
