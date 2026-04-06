@@ -103,9 +103,6 @@ const images = Object.values(modules)
       max-width="800"
       class="mx-auto d-block"
     >
-      <div class="text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: medium; top:5%;">
-       *(Crucifix Veiled for Lent)
-    </div>
   </v-img>
   </div>
 </v-container>

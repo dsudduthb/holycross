@@ -172,13 +172,9 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
         <div class="space-title">The Sanctuary</div>
         <v-divider></v-divider>
         <div class="sacra-text">
-          Communion (aka the Eucharist) is the central act of 
-          Christian worship, in which Christ is truly 
-          present under the forms of bread and wine. 
-          In receiving Holy Communion, believers are 
-          nourished spiritually and drawn into deeper 
-          union with Christ and one another. We begin our liturgy
-          of the Eucharist (aka the Mass) at 10AM on Sundays.
+          The Sanctuary is where we gather to participate in worship together. It is supposed to reflect both the throneroom of heaven and
+          the Temple (as well as Tabernacle) that God had the Israelites build for Him. The Sanctuary faces East because Christ will return
+          from the East.
         </div>
       </v-col>
   </v-row>
@@ -190,13 +186,11 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Holy Water Font</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        The Font is to the right of the door as you enter into the sanctuary. It is the first thing you interact with
+        as you enter. We dip our fingers of our right hand in the font and do the sign of the cross over ourselves. This
+        reminds us of our baptism as we come to worship Christ. It also reflects the ritual washing for Israelites who 
+        came to the temple to worship. When we leave the sanctuary we do it again to remember our baptism as we return into
+        the world.
       </div>
     </v-col>
   </v-row>
@@ -208,13 +202,9 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Baptistry</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        The Baptistry is where the sacrament of baptism takes place. This one can be
+        moved around for ease of use to the parish. It remains on the epistle side (the north side) of the church
+        when not in use.
       </div>
     </v-col>
   </v-row>
@@ -226,13 +216,10 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
         <div class="space-title">The Stations of the Cross</div>
         <v-divider></v-divider>
         <div class="sacra-text">
-          Communion (aka the Eucharist) is the central act of 
-          Christian worship, in which Christ is truly 
-          present under the forms of bread and wine. 
-          In receiving Holy Communion, believers are 
-          nourished spiritually and drawn into deeper 
-          union with Christ and one another. We begin our liturgy
-          of the Eucharist (aka the Mass) at 10AM on Sundays.
+          Hanging on the wall around the whole sanctuary are 14 images depicting
+          the struggle of Christ from the night he was betrayed to the moment he was
+          crucified. Every year during lent (the season before Easter) we walk these 14
+          stations of the cross with Christ, praying at each stop.
         </div>
       </v-col>
   </v-row>
@@ -241,16 +228,14 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <v-img :src="mary_altar" class="space-img"/>
     </v-col>
     <v-col col="auto">
-      <div class="space-title">The Altar of Mary</div>
+      <div class="space-title">Votives for Mary</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        On the Epistle side of the sanctuary (the north side) on the wall before the altar, there is 
+        a statue of the Blessed Virgin Mary, Mother of God. Oil lights are set before the icon to be lit
+        for the prayer and contemplation. In this depiction, Our Lady stands on the moon which references
+        the queen of heaven and she holds the infant Christ which reflects the queen of heaven in the Book
+        of the Revelation of Saint John, chapter 12.
       </div>
     </v-col>
   </v-row>
@@ -262,13 +247,11 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Bishop's Chair</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        By the altar on the Gospel side (the south side) there are a few seats, the most
+        ornate of which is the chair of the bishop. This chair is especially reserved for him.
+        In the early church, the bishop presided over every eucharistic liturgy -- representing
+        the Father and the Lamb of God on the throne in the heavenly worship. Now, out of practicality
+        the bishop cannot preside over every mass, but his throne remains for when his is with us.
       </div>
     </v-col>
   </v-row>
@@ -280,13 +263,10 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Sanctuary Lamp</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        The Sanctuary Lamp is lit when the blessed sacrament is reserved in the tabernacle
+        at the altar. It is following the teaching of God in Exodus chapter 27. The red lamp
+        represents the presence of Christ. In our sanctuary, it hangs on the wall on the Gospel
+        (left side) of the altar.
       </div>
     </v-col>
   </v-row>
@@ -298,13 +278,11 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Altar</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        The altar is the table of communion with God. It is the focal point of the whole sanctuary.
+        On it, the consecration of the blessed sacrament takes place and the sacrafice of the mass
+        is presented before God. It is a reflection of the altar of the tabernacle, the altar of the temple,
+        the altar of heaven, and the table where Christ shared His last supper with the disciples before His
+        death.
       </div>
     </v-col>
   </v-row>
@@ -316,13 +294,12 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Altar Crucifix</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        The crucifix sits on the east wall just above the altar. It depicts the suffering and dead Christ
+        upon the cross. It draws the mind of the celebrant and the participators of the liturgy to the 
+        sacrafice of Christ on the cross. The inscription "INRI" is the latin characters of the english phrase
+        "Jesus of Nazareth, King of the Jews" which was placed on His cross as a symbol of mockery. The cross, 
+        which was a tool of Roman humiliation and torture, is now the means of hope for humanity by Christs death
+        and resurection. Thus it is the principle symbol of the Christian faith.
       </div>
     </v-col>
   </v-row>
@@ -334,13 +311,9 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       <div class="space-title">The Veiled Crucifix</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        Communion (aka the Eucharist) is the central act of 
-        Christian worship, in which Christ is truly 
-        present under the forms of bread and wine. 
-        In receiving Holy Communion, believers are 
-        nourished spiritually and drawn into deeper 
-        union with Christ and one another. We begin our liturgy
-        of the Eucharist (aka the Mass) at 10AM on Sundays.
+        During the time of lent and passiontide, the altar crucifix is veiled with purple cloth. At this time, 
+        the altar is stripped (on Maundy Thursday) and no "Alleluias" are said in worship. The veils are removed 
+        for the Easter celebration and the altar is fully adorned again.
       </div>
     </v-col>
   </v-row>
