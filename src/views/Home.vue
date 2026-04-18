@@ -71,16 +71,15 @@
       </v-row>
     </v-card>
 
-    <v-img
-      :src="what_anglican"
-      cover
-      height="500">
-      <div class="text-h4 text-white overlay-text" style="font-family: 'Times New Roman', Times, serif;">
+  <v-img :src="what_anglican" cover class="banner-img">
+    <div class="banner-overlay">
+      <div class="banner-text">
         “No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ Jesus to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who rose for our sakes is my one desire.”
         <br>
-       - St. Ignatius of Antioch
+        - St. Ignatius of Antioch        
       </div>
-    </v-img>
+    </div>
+  </v-img>
 
     <v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
       <v-row align="center" justify="center">
@@ -125,5 +124,44 @@
 
 .seal{
   width: 100px;
+}
+
+.banner-img {
+  height: 60vh;
+  min-height: 300px;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden; /* 👈 prevents spill */
+}
+
+.banner-text {
+  font-family: 'Celtic Font';
+  text-align: center;
+  color: white;
+
+  /* More aggressive scaling */
+  font-size: clamp(0.8rem, 2.2vw, 2rem);
+
+  max-width: 900px;
+  max-height: 100%; /* 👈 critical */
+  
+  overflow: hidden; /* 👈 prevents vertical overflow */
+  
+  line-height: 1.25;
+  word-break: break-word;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 </style>
