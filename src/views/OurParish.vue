@@ -6,7 +6,7 @@ import eucharist_window from '../assets/building/eucharist.jpg'
 import window from '../assets/building/stained_glass.jpg'
 import cross_window from '../assets/building/sanctus_crux.jpg'
 import apck from '../assets/APCK_seal.png'
-import sanctuary from '../assets/building/sanctuary.jpg'
+import sanctuary from '../assets/the_space/sanctuary.jpg'
 
 const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
@@ -103,9 +103,6 @@ const images = Object.values(modules)
       max-width="800"
       class="mx-auto d-block"
     >
-      <div class="text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: medium; top:5%;">
-       *(Crucifix Veiled for Lent)
-    </div>
   </v-img>
   </div>
 </v-container>

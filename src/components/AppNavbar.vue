@@ -6,7 +6,7 @@
     const router = useRouter()
     const route = useRoute()
     const isHome = computed(() => (
-      route.path === '/' || route.path === '/our_parish'
+      route.path === '/' || route.path === '/our_parish' || route.path === '/worship'
     ))
 
     function goToHome(){
