@@ -11,6 +11,9 @@ import lamp from '../assets/the_space/lamp_of_the_presence.jpg'
 import altar from '../assets/the_space/altar.jpg'
 import altar_crux from '../assets/the_space/altar_crucifix.jpg'
 import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
+import red_doors from '../assets/the_space/red_doors.jpg'
+import chapel from '../assets/the_space/chapel.jpg'
+import tabernacle from '../assets/the_space/tabernacle.jpg'
 
 </script>
 <template>
@@ -47,7 +50,7 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
 </v-container>
 
 <v-container width="80%">
-  <v-row class="text-center" justify="center">
+  <v-row class="text-center ga-6" justify="center">
     <v-col cols="12" md="3">
       <div class="sacra-title">Holy Communion</div>
       <v-divider/>
@@ -164,6 +167,20 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
 </v-container>
 
 <v-container class="ma-10 mx-auto" width="50%">
+  <v-row>
+    <v-col col="auto">
+      <v-img :src="red_doors" class="space-img"/>
+    </v-col>
+    <v-col col="auto">
+      <div class="space-title">The Red Doors</div>
+      <v-divider></v-divider>
+      <div class="sacra-text">
+        You will first enter through red doors when you come visit us. In the Anglican Church, the red doors symbolize
+        the blood of the paschal lamb as told in the story of the passover (Exodus 12). The blood of the lamb over the
+        door signifies sanctuary and refuge in God's divine love.
+      </div>
+    </v-col>
+  </v-row>
   <v-row>
       <v-col col="auto">
         <v-img :src="sanctuary" class="space-img"/>
@@ -287,6 +304,20 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
     </v-col>
   </v-row>
   <v-row>
+      <v-col col="auto">
+        <v-img :src="tabernacle" class="space-img"/>
+      </v-col>
+      <v-col col="auto">
+        <div class="space-title">The Tabernacle</div>
+        <v-divider></v-divider>
+        <div class="sacra-text">
+          The Tabernacle is the golden box on top of the altar that holds the reserves of the
+          blessed sacrament. The name comes from the old testament 'dwelling place' of God.
+          Because Jesus is truly present in the blassed sacrament, He dwells in the tabernacle.
+        </div>
+      </v-col>
+  </v-row>
+  <v-row>
     <v-col col="auto">
       <v-img :src="altar_crux" class="space-img"/>
     </v-col>
@@ -317,6 +348,19 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
       </div>
     </v-col>
   </v-row>
+  <v-row>
+  <v-col col="auto">
+    <v-img :src="chapel" class="space-img"/>
+  </v-col>
+  <v-col col="auto">
+    <div class="space-title">The Chapel</div>
+    <v-divider></v-divider>
+    <div class="sacra-text">
+      The Chapel is a quiet place of prayer where anyone is welcome to pray and reflect. The 
+      Rector also takes confession in the chapel.
+    </div>
+  </v-col>
+</v-row>
 </v-container>
 
   <v-card class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
@@ -344,7 +388,7 @@ import veiled_crux from '../assets/the_space/veiled_crucifix.jpg'
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sacra-text{
-    font-size: x-large;
+    font-size: large;
     font-family: 'Times New Roman', Times, serif;
     color: #742b2b;
     text-align: justify;
