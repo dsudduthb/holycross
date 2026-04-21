@@ -128,4 +128,43 @@
 .seal{
   width: 100px;
 }
+
+.banner-img {
+  height: 60vh;
+  min-height: 300px;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden; /* 👈 prevents spill */
+}
+
+.banner-text {
+  font-family: 'Celtic Font';
+  text-align: center;
+  color: white;
+
+  /* More aggressive scaling */
+  font-size: clamp(0.8rem, 2.2vw, 2rem);
+
+  max-width: 900px;
+  max-height: 100%; /* 👈 critical */
+  
+  overflow: hidden; /* 👈 prevents vertical overflow */
+  
+  line-height: 1.25;
+  word-break: break-word;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
 </style>
