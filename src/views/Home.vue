@@ -71,16 +71,18 @@
       </v-row>
     </v-card>
 
-    <v-img
-      :src="what_anglican"
-      cover
-      height="500">
-      <div class="text-h4 text-white overlay-text" style="font-family: 'Times New Roman', Times, serif;">
-        “No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ Jesus to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who rose for our sakes is my one desire.”
-        <br>
-       - St. Ignatius of Antioch
-      </div>
-    </v-img>
+<v-img
+  :src="what_anglican"
+  height="500"
+  cover
+  class="d-flex align-center justify-center"
+>
+  <div class="overlay-text">
+    “No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ Jesus to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who rose for our sakes is my one desire.”
+    <br />
+    - St. Ignatius of Antioch
+  </div>
+</v-img>
 
     <v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
       <v-row align="center" justify="center">
@@ -114,13 +116,13 @@
 }
 
 .overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
-  font-size: 50%;
+  text-align: center;
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+  max-width: 90%;
+  padding: 1rem;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
 }
 
 .seal{
