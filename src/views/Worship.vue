@@ -15,6 +15,9 @@ import red_doors from '../assets/the_space/red_doors.jpg'
 import chapel from '../assets/the_space/chapel.jpg'
 import tabernacle from '../assets/the_space/tabernacle.jpg'
 
+import Province from '../components/Province.vue'
+import MassTimes from '../components/MassTimes.vue'
+
 </script>
 <template>
 <v-img :src="banner" cover class="banner-img">
@@ -363,23 +366,8 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
 </v-row>
 </v-container>
 
-  <v-card class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
-    <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
-    <v-row justify="center" class="pa-8">
-      <v-col cols="auto">
-        <div class="schedule-header">Morning Prayer</div>
-        <div class="schedule-times">Sunday - 9:30 AM</div>
-      </v-col>
-      <v-col cols="auto">
-        <div class="schedule-header">Holy Eucharist</div>
-        <div class="schedule-times">Sunday - 10:00 AM</div>
-      </v-col>
-      <v-col cols="auto">
-        <div class="schedule-header">Evening Prayer</div>
-        <div class="schedule-times">Thursday - 6:00 PM</div>
-      </v-col>
-    </v-row>
-  </v-card>
+<MassTimes/>
+<Province/>
 </template>
 <style>
 .sacra-title{

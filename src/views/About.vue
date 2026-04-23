@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
+import Province from '../components/Province.vue'
+import MassTimes from '../components/MassTimes.vue'
+
 import CREED from '../assets/creed.txt?raw'
 import creed_image from '../assets/priest_kneeling_mass.png'
 import anglicanism_image from '../assets/washington_cathedral.png'
@@ -23,10 +26,6 @@ function scrollTo(id) {
 
 function goToWorship(){
     router.push('/worship') 
-}
-
-function goto_apck_site(){
-    window.open("https://www.anglicanpck.org/", "_blank");
 }
 </script>
 
@@ -195,42 +194,8 @@ function goto_apck_site(){
     </div>
 </v-container>
 
-<v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
-    <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
-    <v-row justify="center" class="pa-8">
-        <v-col cols="auto">
-            <div class="schedule-header">Morning Prayer</div>
-            <div class="schedule-times">Sunday - 9:30 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Holy Eucharist</div>
-            <div class="schedule-times">Sunday - 10:00 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Evening Prayer</div>
-            <div class="schedule-times">Thursday - 6:00 PM</div>
-        </v-col>
-    </v-row>
-</v-card>
-
-<v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
-    <v-row align="center" justify="center">
-        <v-col cols="auto" class="d-flex justify-center">
-            <v-img 
-            :src="apck" 
-            class="seal"
-            max-width="120"
-            @click="goto_apck_site()"
-            />
-        </v-col>
-        <v-col cols="auto" class="text-left" style="font-family: Celtic Font;">
-            Anglican<br>
-            Province<br>
-            of Christ<br>
-            the King
-        </v-col>
-    </v-row>
-</v-card>
+<MassTimes/>
+<Province/>
 </template>
 <style>
 .info-card-title{
