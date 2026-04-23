@@ -3,11 +3,9 @@ import newcomb from '../assets/staff/fr_newcomb.png'
 import williams from '../assets/staff/fr_mark.jpg'
 import vestry from '../assets/staff/vestry.jpg'
 import anthony from '../assets/staff/Xu_Anthony.jpg'
-import apck from '../assets/APCK_seal.png'
 
-function goto_apck_site(){
-  window.open("https://www.anglicanpck.org/", "_blank");
-}
+import Province from '../components/Province.vue'
+import MassTimes from '../components/MassTimes.vue'
 </script>
 <template>
     <v-container width="50%">
@@ -70,42 +68,8 @@ function goto_apck_site(){
         </v-row>
     </v-container>
 
-<v-card  class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
-    <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
-    <v-row justify="center" class="pa-8">
-        <v-col cols="auto">
-            <div class="schedule-header">Morning Prayer</div>
-            <div class="schedule-times">Sunday - 9:30 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Holy Eucharist</div>
-            <div class="schedule-times">Sunday - 10:00 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Evening Prayer</div>
-            <div class="schedule-times">Thursday - 6:00 PM</div>
-        </v-col>
-    </v-row>
-</v-card>
-
-<v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
-    <v-row align="center" justify="center">
-        <v-col cols="auto" class="d-flex justify-center">
-            <v-img 
-            :src="apck" 
-            class="seal"
-            max-width="120"
-            @click="goto_apck_site()"
-            />
-        </v-col>
-        <v-col cols="auto" class="text-left" style="font-family: Celtic Font;">
-            Anglican<br>
-            Province<br>
-            of Christ<br>
-            the King
-        </v-col>
-    </v-row>
-</v-card>
+<MassTimes/>
+<Province/>
 </template>
 <style>
 .staff-title{
