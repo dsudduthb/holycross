@@ -53,55 +53,52 @@
   </v-row>
 </v-card>
 
-    <v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
-      <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
-      <v-row justify="center" class="pa-8">
-        <v-col cols="auto">
-          <div class="schedule-header">Morning Prayer</div>
-          <div class="schedule-times">Sunday - 9:30 AM</div>
-        </v-col>
-        <v-col cols="auto">
-          <div class="schedule-header">Holy Eucharist</div>
-          <div class="schedule-times">Sunday - 10:00 AM</div>
-        </v-col>
-        <v-col cols="auto">
-          <div class="schedule-header">Evening Prayer</div>
-          <div class="schedule-times">Thursday - 6:00 PM</div>
-        </v-col>
-      </v-row>
-    </v-card>
+  <v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
+    <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
+    <v-row justify="center" class="pa-8">
+      <v-col cols="auto">
+        <div class="schedule-header">Morning Prayer</div>
+        <div class="schedule-times">Sunday - 9:30 AM</div>
+      </v-col>
+      <v-col cols="auto">
+        <div class="schedule-header">Holy Eucharist</div>
+        <div class="schedule-times">Sunday - 10:00 AM</div>
+      </v-col>
+      <v-col cols="auto">
+        <div class="schedule-header">Evening Prayer</div>
+        <div class="schedule-times">Thursday - 6:00 PM</div>
+      </v-col>
+    </v-row>
+  </v-card>
 
-<v-img
-  :src="what_anglican"
-  height="500"
-  cover
-  class="d-flex align-center justify-center"
->
-  <div class="overlay-text">
-    “No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ Jesus to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who rose for our sakes is my one desire.”
-    <br />
-    - St. Ignatius of Antioch
+<v-img :src="what_anglican" cover class="banner-img">
+  <div class="banner-overlay">
+    <div class="banner-text">
+      “No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ Jesus to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who rose for our sakes is my one desire.”
+      <br />
+      - St. Ignatius of Antioch    
+    </div>
   </div>
 </v-img>
 
-    <v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
-      <v-row align="center" justify="center">
-        <v-col cols="auto" class="d-flex justify-center">
-          <v-img 
-            :src="apck" 
-            class="seal"
-            max-width="120"
-            @click="goto_apck_site()"
-          />
-        </v-col>
-        <v-col cols="auto" class="text-left" style="font-family: Celtic Font;">
-          Anglican<br>
-          Province<br>
-          of Christ<br>
-          the King
-        </v-col>
-      </v-row>
-    </v-card>
+<v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
+  <v-row align="center" justify="center">
+    <v-col cols="auto" class="d-flex justify-center">
+      <v-img 
+        :src="apck" 
+        class="seal"
+        max-width="120"
+        @click="goto_apck_site()"
+      />
+    </v-col>
+    <v-col cols="auto" class="text-left" style="font-family: Celtic Font;">
+      Anglican<br>
+      Province<br>
+      of Christ<br>
+      the King
+    </v-col>
+  </v-row>
+</v-card>
 </template>
 <style>
 .schedule-header{
@@ -115,16 +112,6 @@
   font-size: large;
 }
 
-.overlay-text {
-  color: white;
-  text-align: center;
-  font-size: clamp(0.9rem, 2vw, 1.5rem);
-  max-width: 90%;
-  padding: 1rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-  border-radius: 12px;
-}
-
 .seal{
   width: 100px;
 }
@@ -135,36 +122,21 @@
 }
 
 .banner-overlay {
-  position: absolute;
-  inset: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
-  overflow: hidden; /* 👈 prevents spill */
+  justify-content: center;  
+  height: 100%;
 }
 
 .banner-text {
   font-family: 'Celtic Font';
   text-align: center;
   color: white;
-
-  /* More aggressive scaling */
-  font-size: clamp(0.8rem, 2.2vw, 2rem);
-
-  max-width: 900px;
-  max-height: 100%; /* 👈 critical */
-  
-  overflow: hidden; /* 👈 prevents vertical overflow */
-  
-  line-height: 1.25;
-  word-break: break-word;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  font-size: clamp(1rem, 5vw, 3rem);
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 </style>
