@@ -1,6 +1,5 @@
 <script setup>
   import come_worship from '../assets/sanctuary.jpg'
-  import what_anglican from '../assets/save_thy_people.jpg'
   import apck from '../assets/APCK_seal.png' 
   import parish from '../assets/church_landscape2.png'
 
@@ -71,16 +70,6 @@
     </v-row>
   </v-card>
 
-<v-img :src="what_anglican" cover class="banner-img">
-  <div class="banner-overlay">
-    <div class="banner-text">
-      “No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ Jesus to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who rose for our sakes is my one desire.”
-      <br />
-      - St. Ignatius of Antioch    
-    </div>
-  </div>
-</v-img>
-
 <v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
   <v-row align="center" justify="center">
     <v-col cols="auto" class="d-flex justify-center">
@@ -119,24 +108,7 @@
 .banner-img {
   height: 60vh;
   min-height: 300px;
-}
-
-.banner-overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  height: 100%;
-}
-
-.banner-text {
-  font-family: 'Celtic Font';
-  text-align: center;
-  color: white;
-  padding: 2rem;
-  font-size: clamp(1rem, 5vw, 3rem);
-  max-width: 90%;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 </style>
