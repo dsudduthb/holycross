@@ -18,11 +18,11 @@ const images = Object.values(modules)
 <template>
 <v-img :src="parish_photo2" cover>
     <div class="text-h2 text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center;">
-    "One thing have I desired of the Lord, that will I seek after; 
-    that I may dwell in the house of the Lord all the days of my life, 
-    to behold the beauty of the Lord, and to enquire in his temple."<br>
-    - Psalm 27:4
-  </div>
+       "One thing have I desired of the Lord, that will I seek after; 
+       that I may dwell in the house of the Lord all the days of my life, 
+       to behold the beauty of the Lord, and to enquire in his temple."<br>
+        - Psalm 27:4
+    </div>
 </v-img>
 
 <v-container class="ma-10 mx-auto" width="50%">
@@ -99,50 +99,12 @@ const images = Object.values(modules)
       max-width="800"
       class="mx-auto d-block"
     >
-      <div class="text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center; font-size: medium; top:5%;">
-       *(Crucifix Veiled for Lent)
-    </div>
   </v-img>
   </div>
 </v-container>
 
-<v-card  class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
-    <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
-    <v-row justify="center" class="pa-8">
-        <v-col cols="auto">
-            <div class="schedule-header">Morning Prayer</div>
-            <div class="schedule-times">Sunday - 9:30 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Holy Eucharist</div>
-            <div class="schedule-times">Sunday - 10:00 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Evening Prayer</div>
-            <div class="schedule-times">Thursday - 6:00 PM</div>
-        </v-col>
-    </v-row>
-</v-card>
-
-<v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
-    <v-row align="center" justify="center">
-        <v-col cols="auto" class="d-flex justify-center">
-            <v-img 
-            :src="apck" 
-            class="seal"
-            max-width="120"
-            @click="goto_apck_site()"
-            />
-        </v-col>
-        <v-col cols="auto" class="text-left" style="font-family: Celtic Font;">
-            Anglican<br>
-            Province<br>
-            of Christ<br>
-            the King
-        </v-col>
-    </v-row>
-</v-card>
-
+<MassTimes/>
+<Province/>
 </template>
 <style>
 .about-text{
@@ -162,25 +124,5 @@ const images = Object.values(modules)
   font-size: xx-large;
   font-style: italic;
   text-align: center;
-}
-.hero-image {
-  position: relative;
-}
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 80%;
-  max-width: 900px;
-
-  text-align: center;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: clamp(1.5rem, 3vw, 3rem);
-
-  padding: 20px;
 }
 </style>
