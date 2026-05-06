@@ -18,23 +18,22 @@ const modules = import.meta.glob('/src/assets/parish_life/*', {
 const images = Object.values(modules)
 </script>
 <template>
-<v-img :src="parish_photo2" cover>
-    <div class="text-h2 text-white overlay-text" style="font-family: 'Times New Roman', Times, serif; text-align: center;">
-       "One thing have I desired of the Lord, that will I seek after; 
-       that I may dwell in the house of the Lord all the days of my life, 
-       to behold the beauty of the Lord, and to enquire in his temple."<br>
-        - Psalm 27:4
+<v-img :src="parish_photo2" cover class="banner-img">
+  <div class="banner-overlay">
+    <div class="banner-text">
+       Our Parish
     </div>
+  </div>
 </v-img>
 
-<v-container class="ma-10 mx-auto" width="50%">
+<v-container class="ma-10 mx-auto">
     <div class="about-text pa-10 ma-10">
         Hidden in the north-west corner of Oklahoma City is our little parish. We are a diverse group: accountants, engineers, soldiers
         students, nurses, teachers, and more. But we all come together in the beautiful english tradition of the worship of the one, true God.
     </div>
 </v-container>
 
-<v-container width="80%">
+<v-container width="100%">
     <v-divider>
         <div class="about-text">
             Parish Life
@@ -126,5 +125,29 @@ const images = Object.values(modules)
   font-size: xx-large;
   font-style: italic;
   text-align: center;
+}
+
+.banner-img {
+  height: 60vh;
+  min-height: 300px;
+}
+
+.banner-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner-text {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+  color: white;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+@media (max-width: 600px) {
+  .banner-img {
+    height: 40vh;
+  }
 }
 </style>
