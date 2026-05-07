@@ -72,14 +72,33 @@ import MassTimes from '../components/MassTimes.vue'
 <Province/>
 </template>
 <style>
-.staff-title{
-    font-size: xx-large;
-    color: #742b2b;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.staff-img {
+  width: 100%;
+  border-radius: 8px;
 }
-.staff-text{
-    font-size: larger;
-    font-family: 'Times New Roman', Times, serif;
+
+.staff-title {
+  font-size: clamp(1.7rem, 2vw, 2.3rem);
+  color: #742b2b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.staff-text {
+  font-size: clamp(1.2rem, 1.5vw, 2.3rem);
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.7;
+}
+
+.v-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (max-width: 960px) {
+  .v-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 .staff-img{
     max-height: auto;
