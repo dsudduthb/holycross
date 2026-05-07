@@ -30,7 +30,7 @@ function goToWorship(){
 </script>
 
 <template>
-<v-container style="width: 60%;">
+<v-container class="main-container">
     <div>
         <div class="mt-5">
             <h2 class="subtext">"One, Holy, Catholic, and Apostolic Church"</h2>
@@ -60,12 +60,12 @@ function goToWorship(){
 
         <!--CREED CARD-->
         <div class="pt-5" id="christian-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-img :src="creed_image" cover height="100%"/>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Christian
                     </div>
@@ -81,9 +81,9 @@ function goToWorship(){
         </div>
          <!--CATHOLIC CARD-->
         <div class="pt-5" id="catholic-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Catholic
                     </div>
@@ -96,23 +96,23 @@ function goToWorship(){
                     </div>
                     <v-list class="bg-primary">
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in seven sacraments</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We the seven ecumenical councils</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in the apostolic succession of our bishops</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in the Real Presence of the Eucharist</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in the efficacy of baptism</v-list-item-title>
                         </v-list-item>
                     </v-list>
@@ -130,12 +130,12 @@ function goToWorship(){
         </div>
         <!--ANGLICANISM CARD-->
         <div class="pt-5" id="anglican-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-img :src="anglicanism_image" cover height="100%"/>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Anglican
                     </div>                    
@@ -154,9 +154,9 @@ function goToWorship(){
             </v-card>
         </div>
         <div class="pt-5" id="continuing-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Continuing
                     </div>
@@ -177,15 +177,20 @@ function goToWorship(){
                     </div>
                     <v-list class="info-card-text bg-primary pa-3">
                         <div style="font-family: Georgia, 'Times New Roman', Times, serif;">We are in Communion with:</div>
-                        <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title style="font-family: 'Times New Roman', Times, serif; font-size: large;">
-                                The Anglican Catholic Church (ACC)</v-list-item-title>
-                            <v-list-item-title style="font-family: 'Times New Roman', Times, serif; font-size: large;">
-                                The United Episcopal Church of North America (UECNA)</v-list-item-title>
-                        </v-list-item>
+<v-list-item>
+  <v-list-item-title class="text-wrap">
+    The Anglican Catholic Church (ACC)
+  </v-list-item-title>
+</v-list-item>
+
+<v-list-item>
+  <v-list-item-title class="text-wrap">
+    The United Episcopal Church of North America (UECNA)
+  </v-list-item-title>
+</v-list-item>
                     </v-list>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-img :src="continuing" cover height="100%"/>
                 </v-col>
                 </v-row>
@@ -198,19 +203,36 @@ function goToWorship(){
 <Province/>
 </template>
 <style>
-.info-card-title{
-    font-size: 200%;
+.main-container {
+  width: 60%;
 }
-.info-card-text{
-    font-size: 120%;
+
+.info-card {
+  padding: 24px;
 }
-.about-btn{
-    font-family: Georgia, 
-    'Times New Roman', Times, serif; 
-    font-weight: bold;
+
+@media (max-width: 960px) {
+  .main-container {
+    width: 98%;
+  }
+
+  .info-card {
+    padding: 32px;
+  }
+
+  .info-card-title {
+    font-size: 150%;
+  }
+
+  .info-card-text {
+    font-size: 110%;
+    line-height: 1.7;
+  }
+
+  .subtext {
+    font-size: xx-large;
+    text-align: center;
+  }
 }
-.subtext{
-    color: #993939;
-    font-size: xxx-large;
-}
+
 </style>
