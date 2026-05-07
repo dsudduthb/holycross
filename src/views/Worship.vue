@@ -166,12 +166,12 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
   </div>
 </v-container>
 
-<v-container class="ma-10 mx-auto" width="50%">
+<v-container class="my-10 mx-auto" max-width="1200">
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="red_doors" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Red Doors</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -182,10 +182,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-      <v-col col="auto">
+      <v-col cols="12" md="7">
         <v-img :src="sanctuary" class="space-img"/>
       </v-col>
-      <v-col col="auto">
+      <v-col cols="12" md="5">
         <div class="space-title">The Sanctuary</div>
         <v-divider></v-divider>
         <div class="sacra-text">
@@ -196,10 +196,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
       </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="font" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Holy Water Font</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -212,10 +212,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="baptistry" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Baptistry</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -226,10 +226,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
     <v-row>
-      <v-col col="auto">
+      <v-col cols="12" md="7">
         <v-img :src="stations" class="space-img"/>
       </v-col>
-      <v-col col="auto">
+      <v-col cols="12" md="5">
         <div class="space-title">The Stations of the Cross</div>
         <v-divider></v-divider>
         <div class="sacra-text">
@@ -241,10 +241,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
       </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="mary_altar" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">Votives for Mary</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -257,10 +257,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="bishop_chair" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Bishop's Chair</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -273,10 +273,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="lamp" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Sanctuary Lamp</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -288,10 +288,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="altar" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Altar</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -304,10 +304,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-      <v-col col="auto">
+      <v-col cols="12" md="7">
         <v-img :src="tabernacle" class="space-img"/>
       </v-col>
-      <v-col col="auto">
+      <v-col cols="12" md="5">
         <div class="space-title">The Tabernacle</div>
         <v-divider></v-divider>
         <div class="sacra-text">
@@ -318,10 +318,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
       </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="altar_crux" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Altar Crucifix</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -335,10 +335,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-    <v-col col="auto">
+    <v-col cols="12" md="7">
       <v-img :src="veiled_crux" class="space-img"/>
     </v-col>
-    <v-col col="auto">
+    <v-col cols="12" md="5">
       <div class="space-title">The Veiled Crucifix</div>
       <v-divider></v-divider>
       <div class="sacra-text">
@@ -349,10 +349,10 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
     </v-col>
   </v-row>
   <v-row>
-  <v-col col="auto">
+  <v-col cols="12" md="7">
     <v-img :src="chapel" class="space-img"/>
   </v-col>
-  <v-col col="auto">
+  <v-col cols="12" md="5">
     <div class="space-title">The Chapel</div>
     <v-divider></v-divider>
     <div class="sacra-text">
@@ -423,7 +423,8 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
 }
 
 .space-img{
-  max-height: auto;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .space-title{
