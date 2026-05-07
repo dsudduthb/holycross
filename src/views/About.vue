@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
+import Province from '../components/Province.vue'
+import MassTimes from '../components/MassTimes.vue'
+
 import CREED from '../assets/creed.txt?raw'
 import creed_image from '../assets/priest_kneeling_mass.png'
 import anglicanism_image from '../assets/washington_cathedral.png'
@@ -24,14 +27,10 @@ function scrollTo(id) {
 function goToWorship(){
     router.push('/worship') 
 }
-
-function goto_apck_site(){
-    window.open("https://www.anglicanpck.org/", "_blank");
-}
 </script>
 
 <template>
-<v-container style="width: 60%;">
+<v-container class="main-container">
     <div>
         <div class="mt-5">
             <h2 class="subtext">"One, Holy, Catholic, and Apostolic Church"</h2>
@@ -61,12 +60,12 @@ function goto_apck_site(){
 
         <!--CREED CARD-->
         <div class="pt-5" id="christian-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-img :src="creed_image" cover height="100%"/>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Christian
                     </div>
@@ -82,9 +81,9 @@ function goto_apck_site(){
         </div>
          <!--CATHOLIC CARD-->
         <div class="pt-5" id="catholic-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Catholic
                     </div>
@@ -97,23 +96,23 @@ function goto_apck_site(){
                     </div>
                     <v-list class="bg-primary">
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in seven sacraments</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We the seven ecumenical councils</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in the apostolic succession of our bishops</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in the Real Presence of the Eucharist</v-list-item-title>
                         </v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title class="info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                            <v-list-item-title class="text-wrap info-card-text" style="font-family: 'Times New Roman', Times, serif; font-size: larger;">
                                 We believe in the efficacy of baptism</v-list-item-title>
                         </v-list-item>
                     </v-list>
@@ -131,12 +130,12 @@ function goto_apck_site(){
         </div>
         <!--ANGLICANISM CARD-->
         <div class="pt-5" id="anglican-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-img :src="anglicanism_image" cover height="100%"/>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Anglican
                     </div>                    
@@ -155,9 +154,9 @@ function goto_apck_site(){
             </v-card>
         </div>
         <div class="pt-5" id="continuing-card">
-            <v-card color="primary">
+            <v-card color="primary" class="info-card">
                 <v-row no-gutters>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <div class="info-card-title pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold; text-align: center;">
                         Continuing
                     </div>
@@ -178,15 +177,20 @@ function goto_apck_site(){
                     </div>
                     <v-list class="info-card-text bg-primary pa-3">
                         <div style="font-family: Georgia, 'Times New Roman', Times, serif;">We are in Communion with:</div>
-                        <v-list-item prepend-icon="mdi-circle-small">
-                            <v-list-item-title style="font-family: 'Times New Roman', Times, serif; font-size: large;">
-                                The Anglican Catholic Church (ACC)</v-list-item-title>
-                            <v-list-item-title style="font-family: 'Times New Roman', Times, serif; font-size: large;">
-                                The United Episcopal Church of North America (UECNA)</v-list-item-title>
-                        </v-list-item>
+<v-list-item>
+  <v-list-item-title class="text-wrap">
+    The Anglican Catholic Church (ACC)
+  </v-list-item-title>
+</v-list-item>
+
+<v-list-item>
+  <v-list-item-title class="text-wrap">
+    The United Episcopal Church of North America (UECNA)
+  </v-list-item-title>
+</v-list-item>
                     </v-list>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-img :src="continuing" cover height="100%"/>
                 </v-col>
                 </v-row>
@@ -195,57 +199,40 @@ function goto_apck_site(){
     </div>
 </v-container>
 
-<v-card   class="w-100 text-center pa-10 ma-0" color="primary" rounded="0" elevation="0">
-    <div style="font-size: x-large; font-family: Georgia, 'Times New Roman', Times, serif; font-style: italic; font-weight: bold;">Service Times</div>
-    <v-row justify="center" class="pa-8">
-        <v-col cols="auto">
-            <div class="schedule-header">Morning Prayer</div>
-            <div class="schedule-times">Sunday - 9:30 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Holy Eucharist</div>
-            <div class="schedule-times">Sunday - 10:00 AM</div>
-        </v-col>
-        <v-col cols="auto">
-            <div class="schedule-header">Evening Prayer</div>
-            <div class="schedule-times">Thursday - 6:00 PM</div>
-        </v-col>
-    </v-row>
-</v-card>
-
-<v-card class="w-100 pa-10 ma-0" color="secondary" rounded="0" elevation="0">
-    <v-row align="center" justify="center">
-        <v-col cols="auto" class="d-flex justify-center">
-            <v-img 
-            :src="apck" 
-            class="seal"
-            max-width="120"
-            @click="goto_apck_site()"
-            />
-        </v-col>
-        <v-col cols="auto" class="text-left" style="font-family: Celtic Font;">
-            Anglican<br>
-            Province<br>
-            of Christ<br>
-            the King
-        </v-col>
-    </v-row>
-</v-card>
+<MassTimes/>
+<Province/>
 </template>
 <style>
-.info-card-title{
-    font-size: 200%;
+.main-container {
+  width: 60%;
 }
-.info-card-text{
-    font-size: 120%;
+
+.info-card {
+  padding: 24px;
 }
-.about-btn{
-    font-family: Georgia, 
-    'Times New Roman', Times, serif; 
-    font-weight: bold;
+
+@media (max-width: 960px) {
+  .main-container {
+    width: 98%;
+  }
+
+  .info-card {
+    padding: 32px;
+  }
+
+  .info-card-title {
+    font-size: 150%;
+  }
+
+  .info-card-text {
+    font-size: 110%;
+    line-height: 1.7;
+  }
+
+  .subtext {
+    font-size: xx-large;
+    text-align: center;
+  }
 }
-.subtext{
-    color: #993939;
-    font-size: xxx-large;
-}
+
 </style>
