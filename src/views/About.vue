@@ -211,6 +211,15 @@ function goToWorship(){
   padding: 24px;
 }
 
+.info-card-text {
+font-size: 130%;
+line-height: 1.7;
+}
+
+.info-card-title {
+font-size: 150%;
+}
+
 @media (max-width: 960px) {
   .main-container {
     width: 98%;
