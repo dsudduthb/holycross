@@ -19,15 +19,14 @@
 <v-card color="primary" class="pa-10" rounded="0">
   <v-row align="center" justify="center">
     <v-col cols="auto">
-      <div class="d-flex align-center justify-center">
+      <div class="d-flex flex-column flex-md-row align-center justify-center">
 
-        <v-img
-          :src="come_worship"
-          width="500"
-          class="mr-8"
-          cover
-          style="left: -10%;"
-        />
+      <v-img
+        :src="come_worship"
+        class="mr-md-8 mb-4 mb-md-0"
+        :width="$vuetify.display.smAndDown ? '100%' : 500"
+        cover
+      />
 
         <div class="text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">
           <div style="font-weight: bold; font-size:250%;">+Traditional Liturgy+</div>
