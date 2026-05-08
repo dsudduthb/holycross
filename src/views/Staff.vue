@@ -4,6 +4,9 @@ import williams from '../assets/staff/fr_mark.jpg'
 import vestry from '../assets/staff/vestry.jpg'
 import anthony from '../assets/staff/Xu_Anthony.jpg'
 import apck from '../assets/APCK_seal.png'
+
+import MassTimes from '../components/MassTimes.vue'
+import Province from '../components/Province.vue'
 </script>
 <template>
 <v-container class="my-10 mx-auto" max-width="1200">
@@ -88,6 +91,8 @@ import apck from '../assets/APCK_seal.png'
   </v-row>
 
 </v-container>
+<MassTimes/>
+<Province/>
 </template>
 <style>
 .staff-title{
