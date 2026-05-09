@@ -25,7 +25,7 @@ function goto_tithe_site(){
 </v-container>
 <v-divider></v-divider>
 
-<div class="ma-5" align="center">
+<div class="mb-5 mt-5" align="center">
     <v-img :src="tithe" class="tithe-img"
     @click="goto_tithe_site()"></v-img>
 </div>
@@ -62,7 +62,14 @@ function goto_tithe_site(){
   background: rgba(0, 0, 0, 0.4);
 }
 
-.tithe-img{
-    width: 25%;
+.tithe-img {
+  width: 25%;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .tithe-img {
+    width: 80%;
+  }
 }
 </style>
