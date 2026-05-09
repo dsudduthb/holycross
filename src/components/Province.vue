@@ -2,7 +2,7 @@
 import apck from '../assets/APCK_seal.png' 
 
 function goto_apck_site(){
-window.open("https://www.anglicanpck.org/", "_blank");
+  window.open("https://www.anglicanpck.org/", "_blank");
 }
 </script>
 <template>
