@@ -6,7 +6,7 @@
     const router = useRouter()
     const route = useRoute()
     const isHome = computed(() => (
-      route.path === '/' || route.path === '/our_parish' || route.path === '/worship'
+      route.path === '/' || route.path === '/our_parish' || route.path === '/worship' || route.path === '/give'
     ))
 
     function goToHome(){
@@ -36,17 +36,36 @@
       <div class="holy_cross_logo" :class="{'nav-link--white' : isHome}">Cross</div>
     </div>
 
-    <div class="d-flex ga-4">
+    <div class="nav-links d-flex ga-4">
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/">HOME</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/about">ABOUT</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/worship">WORSHIP</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/our_parish">OUR PARISH</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/our_parish">PARISH</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/staff">STAFF</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/kalendar">KALENDAR</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/give">GIVE</router-link>
     </div>
   </v-card>
 </template>
 
 <style scoped>
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+/* Optional: improve small-screen layout */
+@media (max-width: 700px) {
+  .nav-links {
+    gap: 12px !important;
+  }
+
+  .nav-link {
+    font-size: medium;
+  }
+}
 .nav-link {
   text-decoration: none;
   font-size: large;

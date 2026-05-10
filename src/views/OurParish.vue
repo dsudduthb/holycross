@@ -3,9 +3,11 @@ import parish_photo2 from '../assets/parish_photo2.png'
 import christ_window from '../assets/building/christ.jpg'
 import mary_window from '../assets/building/theotokos.jpg'
 import eucharist_window from '../assets/building/eucharist.jpg'
-import window from '../assets/building/stained_glass.jpg'
+import normal_window from '../assets/building/stained_glass.jpg'
 import cross_window from '../assets/building/sanctus_crux.jpg'
 import sanctuary from '../assets/the_space/sanctuary.jpg'
+
+import facebook from '../assets/facebook_logo.png'
 
 import MassTimes from '../components/MassTimes.vue'
 import Province from '../components/Province.vue'
@@ -14,6 +16,10 @@ const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
   import: 'default'
 })
+
+function goto_fb_site(){
+  window.open("https://www.facebook.com/holycrosschurchokc", "_blank");
+}
 
 const images = Object.values(modules)
 </script>
@@ -82,7 +88,7 @@ const images = Object.values(modules)
       <v-img :src="cross_window" width="250"/>
     </v-col>
     <v-col cols="auto">
-      <v-img :src="window" width="250"/>
+      <v-img :src="normal_window" width="250"/>
     </v-col>
   </v-row>
 </v-container>
@@ -104,9 +110,17 @@ const images = Object.values(modules)
   </div>
 </v-container>
 
+<div align="center" class="mb-10">
+  <div class="about-text mb-10">
+    Follow Us on Social Media
+  </div>
+  <v-img :src="facebook" class="facebook-icon" @click="goto_fb_site()"/>
+</div>
+
 <MassTimes/>
 <Province/>
 </template>
+
 <style>
 .about-text{
   font-family:'Times New Roman', Times, serif;
@@ -145,9 +159,22 @@ const images = Object.values(modules)
   color: white;
   font-size: clamp(1.2rem, 3vw, 2rem);
 }
+
 @media (max-width: 600px) {
   .banner-img {
     height: 40vh;
+  }
+}
+
+.facebook-icon {
+  width: 8%;
+  max-width: 80px;
+}
+
+@media (max-width: 600px) {
+  .facebook-icon {
+    width: 25%;
+    max-width: 120px;
   }
 }
 </style>
