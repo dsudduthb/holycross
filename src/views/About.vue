@@ -142,7 +142,7 @@ function goToWorship(){
                     <div  class="info-card-text pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
                         Anglicanism is a form of Catholic Christianity expressed through the traditions of the English Church. We emphasize scripture,
                         tradition, and reason as the "three-legged stool" of the Church. Our faith is summarized by the Creed of the first Council of Nicaea
-                        and it is practiced in that beautiful tradition charished and passed down since before 314AD, when the first Christians arrived in what is now England in 
+                        and it is practiced in that beautiful tradition charished and passed down since before 314AD, when the first Christians arrived in what is now England.
                     </div>
                     <br>
                     <div  class="info-card-text pl-3 pr-3 pb-3" style="font-family: 'Times New Roman', Times, serif; text-align: justify;">
