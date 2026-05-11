@@ -41,7 +41,7 @@
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/about">ABOUT</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/worship">WORSHIP</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/our_parish">PARISH</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/staff">STAFF</router-link>
+      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/leadership">LEADERSHIP</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/kalendar">KALENDAR</router-link>
       <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/give">GIVE</router-link>
     </div>

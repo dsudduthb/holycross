@@ -24,8 +24,8 @@ const routes = [
     component: OurParish
   },
   {
-    path: '/staff',
-    name: 'Staff',
+    path: '/leadership',
+    name: 'Leadership',
     component: Staff
   },
   {
