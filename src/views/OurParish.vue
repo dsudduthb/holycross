@@ -96,7 +96,7 @@ const images = Object.values(modules)
 <v-container width="80%" class="mt-10 mb-10">
   <v-divider>
     <div class="about-text">
-      The Sanctuary
+      The Church Proper
     </div>
   </v-divider>
 

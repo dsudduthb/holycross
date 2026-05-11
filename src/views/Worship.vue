@@ -1,7 +1,7 @@
 <script setup>
 import banner from '../assets/Eucharist-from-Side.jpg'
 
-import sanctuary from '../assets/the_space/sanctuary.jpg'
+import church_propper from '../assets/the_space/sanctuary.jpg'
 import font from '../assets/the_space/holy_water_font.jpg'
 import baptistry from '../assets/the_space/baptistry.jpg'
 import stations from '../assets/the_space/station.jpg'
@@ -186,14 +186,14 @@ import MassTimes from '../components/MassTimes.vue'
   </v-row>
   <v-row>
       <v-col cols="12" md="7">
-        <v-img :src="sanctuary" class="space-img"/>
+        <v-img :src="church_propper" class="space-img"/>
       </v-col>
       <v-col cols="12" md="5">
-        <div class="space-title">The Sanctuary</div>
+        <div class="space-title">The Church Proper</div>
         <v-divider></v-divider>
         <div class="sacra-text">
-          The Sanctuary is where we gather to participate in worship together. It is supposed to reflect both the throneroom of heaven and
-          the Temple (as well as Tabernacle) that God had the Israelites build for Him. The Sanctuary faces East because Christ will return
+          The Church Proper is where we gather to participate in worship together. It is supposed to reflect both the throneroom of heaven and
+          the Temple (as well as Tabernacle) that God had the Israelites build for Him. The Church faces East because Christ will return
           from the East.
         </div>
       </v-col>
