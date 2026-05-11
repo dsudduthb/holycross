@@ -7,7 +7,7 @@
         <div class="schedule-times">Sunday - 9:30 AM</div>
       </v-col>
       <v-col cols="auto">
-        <div class="schedule-header">Holy Eucharist</div>
+        <div class="schedule-header">Holy Communion</div>
         <div class="schedule-times">Sunday - 10:00 AM</div>
       </v-col>
       <v-col cols="auto">
