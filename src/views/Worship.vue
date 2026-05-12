@@ -267,7 +267,7 @@ import MassTimes from '../components/MassTimes.vue'
       <div class="space-title">The Cathedra</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        By the altar on the Gospel side (the south side) there are a few seats, the most
+        By the altar on the Gospel side (the left side) there are a few seats, the most
         ornate of which is the chair of the bishop known as the Cathedra (Latin for seat). 
         This chair is especially reserved for him. In the early church, the bishop 
         presided over every eucharistic liturgy -- representing
