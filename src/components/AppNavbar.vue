@@ -64,14 +64,14 @@ const links = [
         </div>
       </div>
 
-    <div class="nav-links d-flex ga-4">
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/">HOME</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/about">ABOUT</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/worship">WORSHIP</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/our_parish">PARISH</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/leadership">LEADERSHIP</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/kalendar">KALENDAR</router-link>
-      <router-link class="nav-link" :class="{'nav-link--white' : isHome}" to="/give">GIVE</router-link>
+      <v-btn
+        icon
+        color="primary"
+        class="mobile-menu-btn"
+        @click="drawer = true"
+      >
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
     </div>
 
     <!-- DESKTOP LAYOUT -->
