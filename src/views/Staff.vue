@@ -18,7 +18,7 @@ import Province from '../components/Province.vue'
 
     <v-col cols="12" md="8">
       <div class="staff-title">
-        Rev. Father Charles Newcomb<br>Rector
+        The Rev'd. Charles Newcomb<br>Rector
       </div>
 
       <v-divider></v-divider>
@@ -50,25 +50,6 @@ import Province from '../components/Province.vue'
             Anthony is a doctoral student at the University of Oklahoma 
             and has previously studied at the University of North Texas, 
             the Royal College of Music (UK), and the Nanyang Academy of Fine Arts (Singapore).
-      </div>
-    </v-col>
-  </v-row>
-
-  <v-row align="center" class="mb-12">
-    <v-col cols="12" md="4">
-      <v-img :src="williams" class="staff-img" cover />
-    </v-col>
-
-    <v-col cols="12" md="8">
-      <div class="staff-title">
-        Rev. Father Mark Williams<br>Rector Emeritus
-      </div>
-
-      <v-divider></v-divider>
-
-      <div class="staff-text mt-6">
-            Retired in August 2023, but still very much in our hearts.  
-            Godspeed Father Mark and family!
       </div>
     </v-col>
   </v-row>
