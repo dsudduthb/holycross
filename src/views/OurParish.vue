@@ -34,8 +34,8 @@ const images = Object.values(modules)
 
 <v-container class="ma-10 mx-auto">
     <div class="about-text pa-10 ma-10">
-        Hidden in the north-west corner of Oklahoma City is our little parish. We are a diverse group: accountants, engineers, soldiers
-        students, nurses, teachers, and more. But we all come together in the beautiful english tradition of the worship of the one, true God.
+        Our little parish was founded in 1978 by a small group of Christians seeking a traditional home. We are a diverse group: accountants, engineers, soldiers,
+        students, nurses, teachers, and more. But we all come together in the beautiful English tradition of the worship of the one, true God.
     </div>
 </v-container>
 
