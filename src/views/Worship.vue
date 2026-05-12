@@ -1,9 +1,9 @@
 <script setup>
 import banner from '../assets/Eucharist-from-Side.jpg'
 
-import sanctuary from '../assets/the_space/sanctuary.jpg'
+import church_propper from '../assets/the_space/sanctuary.jpg'
 import font from '../assets/the_space/holy_water_font.jpg'
-import baptistry from '../assets/the_space/baptistry.jpg'
+import baptismal_font from '../assets/the_space/baptistry.jpg'
 import stations from '../assets/the_space/station.jpg'
 import mary_altar from '../assets/the_space/mary_altar.jpg'
 import bishop_chair from '../assets/the_space/bishops_chair.jpg'
@@ -186,14 +186,14 @@ import MassTimes from '../components/MassTimes.vue'
   </v-row>
   <v-row>
       <v-col cols="12" md="7">
-        <v-img :src="sanctuary" class="space-img"/>
+        <v-img :src="church_propper" class="space-img"/>
       </v-col>
       <v-col cols="12" md="5">
-        <div class="space-title">The Sanctuary</div>
+        <div class="space-title">The Church Proper</div>
         <v-divider></v-divider>
         <div class="sacra-text">
-          The Sanctuary is where we gather to participate in worship together. It is supposed to reflect both the throneroom of heaven and
-          the Temple (as well as Tabernacle) that God had the Israelites build for Him. The Sanctuary faces East because Christ will return
+          The Church Proper is where we gather to participate in worship together. It is supposed to reflect both the throneroom of heaven and
+          the Temple (as well as Tabernacle) that God had the Israelites build for Him. The Church faces East because Christ will return
           from the East.
         </div>
       </v-col>
@@ -216,13 +216,13 @@ import MassTimes from '../components/MassTimes.vue'
   </v-row>
   <v-row>
     <v-col cols="12" md="7">
-      <v-img :src="baptistry" class="space-img"/>
+      <v-img :src="baptismal_font" class="space-img"/>
     </v-col>
     <v-col cols="12" md="5">
-      <div class="space-title">The Baptistry</div>
+      <div class="space-title">The Baptismal Font</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        The Baptistry is where the sacrament of baptism takes place. This one can be
+        The Baptismal Font is where the sacrament of baptism takes place. This one can be
         moved around for ease of use to the parish. It remains on the epistle side (the north side) of the church
         when not in use.
       </div>
@@ -243,7 +243,7 @@ import MassTimes from '../components/MassTimes.vue'
         </div>
       </v-col>
   </v-row>
-  <v-row>
+  <v-row hidden>
     <v-col cols="12" md="7">
       <v-img :src="mary_altar" class="space-img"/>
     </v-col>
@@ -264,12 +264,13 @@ import MassTimes from '../components/MassTimes.vue'
       <v-img :src="bishop_chair" class="space-img"/>
     </v-col>
     <v-col cols="12" md="5">
-      <div class="space-title">The Bishop's Chair</div>
+      <div class="space-title">The Cathedra</div>
       <v-divider></v-divider>
       <div class="sacra-text">
-        By the altar on the Gospel side (the south side) there are a few seats, the most
-        ornate of which is the chair of the bishop. This chair is especially reserved for him.
-        In the early church, the bishop presided over every eucharistic liturgy -- representing
+        By the altar on the Gospel side (the left side) there are a few seats, the most
+        ornate of which is the chair of the bishop known as the Cathedra (Latin for seat). 
+        This chair is especially reserved for him. In the early church, the bishop 
+        presided over every eucharistic liturgy -- representing
         the Father and the Lamb of God on the throne in the heavenly worship. Now, out of practicality
         the bishop cannot preside over every mass, but his throne remains for when his is with us.
       </div>
@@ -411,7 +412,7 @@ import MassTimes from '../components/MassTimes.vue'
 }
 
 .space-img{
-  width: 100%;
+  width: 80%;
   border-radius: 8px;
 }
 
