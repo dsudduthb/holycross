@@ -9,11 +9,10 @@ import MassTimes from '../components/MassTimes.vue'
 import Province from '../components/Province.vue'
 </script>
 <template>
-<v-container class="my-10 mx-auto" max-width="1200">
-
+<v-container class="my-10" max-width="1200">
   <v-row align="center" class="mb-12">
     <v-col cols="12" md="4">
-      <v-img :src="newcomb" class="staff-img" cover />
+      <v-img :src="newcomb" class="staff-img" />
     </v-col>
 
     <v-col cols="12" md="8">
@@ -36,7 +35,7 @@ import Province from '../components/Province.vue'
 
   <v-row align="center" class="mb-12">
     <v-col cols="12" md="4">
-      <v-img :src="anthony" class="staff-img" cover />
+      <v-img :src="anthony" class="staff-img" />
     </v-col>
 
     <v-col cols="12" md="8">
@@ -56,7 +55,7 @@ import Province from '../components/Province.vue'
 
   <v-row align="center" class="mb-12">
     <v-col cols="12" md="4">
-      <v-img :src="vestry" class="staff-img" cover />
+      <v-img :src="vestry" class="staff-img" />
     </v-col>
 
     <v-col cols="12" md="8">
@@ -99,5 +98,10 @@ import Province from '../components/Province.vue'
   .staff-text {
     text-align: justify;
   }
+}
+
+.staff-img{
+  width: 100%;
+  border-radius: 8px;
 }
 </style>

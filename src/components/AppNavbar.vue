@@ -27,7 +27,7 @@ const links = [
   { title: 'ABOUT', path: '/about' },
   { title: 'WORSHIP', path: '/worship' },
   { title: 'PARISH', path: '/our_parish' },
-  { title: 'STAFF', path: '/staff' },
+  { title: 'LEADERSHIP', path: '/leadership' },
   { title: 'KALENDAR', path: '/kalendar' },
   { title: 'GIVE', path: '/give' },
 ]
@@ -178,12 +178,12 @@ const links = [
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .navbar--solid {
   position: relative;
-  width: 100%;
+  z-index: 9999;
 }
 
 .nav-link--white{
