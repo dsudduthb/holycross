@@ -47,12 +47,11 @@ const images = Object.values(modules)
     </v-divider>
 </v-container>
 
-<v-container width="50%" class="mb-10">
+<v-container class="mb-10 img-carousel">
   <v-carousel
-    max-width="700"
-    height="500"
-    hide-delimiter-background
-    show-arrows="hover"
+    class="parish-carousel"
+    hide-delimiters
+    :height="$vuetify.display.mobile ? 260 : 500"
   >
     <v-carousel-item
       v-for="(image, i) in images"
@@ -60,8 +59,8 @@ const images = Object.values(modules)
     >
       <v-img
         :src="image"
-        contain
-        height="100%"
+        cover
+        class="carousel-image"
       />
     </v-carousel-item>
   </v-carousel>
@@ -91,23 +90,6 @@ const images = Object.values(modules)
       <v-img :src="normal_window" width="250"/>
     </v-col>
   </v-row>
-</v-container>
-
-<v-container width="80%" class="mt-10 mb-10">
-  <v-divider>
-    <div class="about-text">
-      The Church Proper
-    </div>
-  </v-divider>
-
-  <div class="d-flex justify-center mt-10">
-    <v-img 
-      :src="sanctuary" 
-      max-width="800"
-      class="mx-auto d-block"
-    >
-  </v-img>
-  </div>
 </v-container>
 
 <div align="center" class="mb-10">
@@ -175,6 +157,31 @@ const images = Object.values(modules)
   .facebook-icon {
     width: 25%;
     max-width: 120px;
+  }
+}
+
+.img-carousel{
+  width: 50%;
+}
+
+.parish-carousel {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.carousel-image {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .img-carousel{
+    width: 95%;
+  }
+
+  .parish-carousel {
+    border-radius: 12px;
   }
 }
 </style>
