@@ -7,8 +7,6 @@ import normal_window from '../assets/building/stained_glass.jpg'
 import cross_window from '../assets/building/sanctus_crux.jpg'
 import sanctuary from '../assets/the_space/sanctuary.jpg'
 
-import facebook from '../assets/facebook_logo.png'
-
 import MassTimes from '../components/MassTimes.vue'
 import Province from '../components/Province.vue'
 
@@ -16,10 +14,6 @@ const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
   import: 'default'
 })
-
-function goto_fb_site(){
-  window.open("https://www.facebook.com/holycrosschurchokc", "_blank");
-}
 
 const images = Object.values(modules)
 </script>
@@ -91,13 +85,6 @@ const images = Object.values(modules)
     </v-col>
   </v-row>
 </v-container>
-
-<div align="center" class="mb-10">
-  <div class="about-text mb-10">
-    Follow Us on Social Media
-  </div>
-  <v-img :src="facebook" class="facebook-icon" @click="goto_fb_site()"/>
-</div>
 
 <MassTimes/>
 <Province/>
