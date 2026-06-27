@@ -107,23 +107,34 @@ const links = [
     </template>
 
     <!-- MOBILE DRAWER -->
-    <v-navigation-drawer
-      v-model="drawer"
-      temporary
-      location="right"
+<v-navigation-drawer
+  v-model="drawer"
+  temporary
+  location="right"
+  color="#993939"
+>
+  <v-toolbar color="#993939" density="compact">
+    <v-spacer />
+    <v-btn
+      icon="mdi-close"
+      variant="text"
+      color="white"
+      @click="drawer = false"
+    />
+  </v-toolbar>
+
+  <v-list bg-color="transparent">
+    <v-list-item
+      v-for="link in links"
+      :key="link.path"
+      @click="router.push(link.path); drawer = false"
     >
-      <v-list>
-        <v-list-item
-          v-for="link in links"
-          :key="link.path"
-          @click="router.push(link.path); drawer = false"
-        >
-          <v-list-item-title>
-            {{ link.title }}
-          </v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+      <v-list-item-title class="text-white">
+        {{ link.title }}
+      </v-list-item-title>
+    </v-list-item>
+  </v-list>
+</v-navigation-drawer>
 
   </v-card>
 </template>
