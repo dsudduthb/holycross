@@ -3,6 +3,7 @@
   import parish from '../assets/church_landscape2.png'
   import Province from '../components/Province.vue'
   import MassTimes from '../components/MassTimes.vue'
+  import MediaBar from '../components/MediaBar.vue'
 
   import { useRouter } from 'vue-router'
 
@@ -50,6 +51,7 @@
 
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 <style>
 .schedule-header{

@@ -6,7 +6,6 @@ import Staff from '../views/Staff.vue'
 import Worship from '../views/Worship.vue'
 import Give from '../views/Give.vue'
 import Kalendar from '../views/Kalendar.vue'
-import Media from '../views/Media.vue'
 
 const routes = [
   {
@@ -43,11 +42,6 @@ const routes = [
     path: '/give',
     name: 'Give',
     component: Give
-  },
-  {
-    path: '/media',
-    name: 'Media',
-    component: Media
   },
 ]
 
