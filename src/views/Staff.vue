@@ -9,6 +9,7 @@ import ashman from '../assets/staff/bp_ashman.png'
 
 import MassTimes from '../components/MassTimes.vue'
 import Province from '../components/Province.vue'
+import MediaBar from '../components/MediaBar.vue'
 </script>
 <template>
 <v-container class="my-10" max-width="1200">
@@ -171,6 +172,7 @@ import Province from '../components/Province.vue'
 </v-container>
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 <style>
 .staff-title{

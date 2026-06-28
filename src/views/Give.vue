@@ -4,6 +4,7 @@ import tithe from '../assets/tithely.jpg'
 
 import Province from '../components/Province.vue'
 import MassTimes from '../components/MassTimes.vue'
+import MediaBar from '../components/MediaBar.vue'
 
 function goto_tithe_site(){
   window.open("https://give.tithe.ly/?formId=a0569f8e-358a-40cd-a26e-6734a20fa009", "_blank");
@@ -31,6 +32,7 @@ function goto_tithe_site(){
 </div>
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 <style>
 .banner-img {

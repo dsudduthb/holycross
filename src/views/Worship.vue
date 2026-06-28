@@ -17,6 +17,7 @@ import tabernacle from '../assets/the_space/tabernacle.jpg'
 
 import Province from '../components/Province.vue'
 import MassTimes from '../components/MassTimes.vue'
+import MediaBar from '../components/MediaBar.vue'
 
 </script>
 <template>
@@ -369,6 +370,7 @@ import MassTimes from '../components/MassTimes.vue'
 
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 <style>
 .sacra-title{

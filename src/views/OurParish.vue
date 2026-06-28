@@ -9,6 +9,7 @@ import sanctuary from '../assets/the_space/sanctuary.jpg'
 
 import MassTimes from '../components/MassTimes.vue'
 import Province from '../components/Province.vue'
+import MediaBar from '../components/MediaBar.vue'
 
 const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
@@ -88,6 +89,7 @@ const images = Object.values(modules)
 
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 
 <style>
