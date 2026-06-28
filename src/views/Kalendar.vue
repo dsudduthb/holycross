@@ -1,6 +1,7 @@
 <script setup>
 import Province from '../components/Province.vue'
 import MassTimes from '../components/MassTimes.vue'
+import MediaBar from '../components/MediaBar.vue'
 </script>
 <template>
 <div align="center" class="calendar-container">
@@ -11,6 +12,7 @@ import MassTimes from '../components/MassTimes.vue'
 
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 <style scoped>
 .calendar-container {

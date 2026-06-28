@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 
 import Province from '../components/Province.vue'
 import MassTimes from '../components/MassTimes.vue'
+import MediaBar from '../components/MediaBar.vue'
 
 import CREED from '../assets/creed.txt?raw'
 import creed_image from '../assets/priest_kneeling_mass.png'
@@ -201,6 +202,7 @@ function goToWorship(){
 
 <MassTimes/>
 <Province/>
+<MediaBar/>
 </template>
 <style>
 .main-container {
