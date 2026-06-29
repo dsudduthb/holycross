@@ -11,7 +11,8 @@ function goto_yt_site(){
 </script>
 <template>
 <v-card class="w-100 ma-0" color="secondary" rounded="0" elevation="0">
-<v-row justify="center" align="center" class="social-row pb-5 pt-5">
+<div align="center" style="font-size: larger; font-style: italic; font-family: Georgia, 'Times New Roman', Times, serif;">Parish News</div>  
+<v-row justify="center" align="center" class="social-row">
   <v-col cols="auto">
     <v-img
       :src="facebook"
@@ -32,7 +33,7 @@ function goto_yt_site(){
 </template>
 <style>
 .social-icon {
-  width: 64px;
+  width: 200px;
   max-width: 100%;
   cursor: pointer;
 }
