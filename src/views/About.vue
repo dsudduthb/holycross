@@ -226,6 +226,9 @@ function goToWorship(){
 
     <v-tabs-window-item value="faq">
         <v-container class="main-container">
+            <div class="mt-5">
+                    <h2 class="subtext">Frequently Asked Questions</h2>
+                </div>
             <div class="faq-title pa-5">
                 What is Your Sunday Schedule?
                 <v-divider />
@@ -270,7 +273,15 @@ function goToWorship(){
                 Can I Take Communion?
                 <v-divider />
                 <div class="faq-text">
-                   ...
+                   There are three conditions in which you can receive communion:
+                    <v-list bg-color="transparent">
+                        <v-list-item prepend-icon="mdi-circle-small">You are a Baptized Christian.</v-list-item>
+                        <v-list-item prepend-icon="mdi-circle-small">You Believe in the Real Presense of Jesus Christ in the Eucharist.</v-list-item>
+                        <v-list-item prepend-icon="mdi-circle-small">You have permission from your church leadership.</v-list-item>
+                    </v-list>
+                    If you do not meet these qualifications (or if you do not wish to participate) then you may still approach the altar ritual
+                    with everyone else to receieve a blessing. To receive a blessing, simply cross your arms in an 'X' shape across you chest. 
+                    You may also remain in your pew.
                 </div>
             </div>
             <div class="faq-title pa-5">
@@ -284,10 +295,22 @@ function goToWorship(){
                 How do I join Holy Cross?
                 <v-divider />
                 <div class="faq-text">
-                    ...
+                    If you wish to join our community, then talk to our priest before or after the liturgy and he can instruct you in 
+                    confirmation or welcoming.
                 </div>
             </div>
         </v-container>
+    </v-tabs-window-item>
+
+    <v-tabs-window-item value="resources">
+        <v-container>
+        <iframe
+            align="center"
+            src="../../public/files/the-affirmation-of-st.-louis.pdf"
+            width="100%"
+            height="800"
+            style="border: none;"
+        ></iframe></v-container>
     </v-tabs-window-item>
 </v-tabs-window>
 
