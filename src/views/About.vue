@@ -233,40 +233,47 @@ function goToWorship(){
                 What is Your Sunday Schedule?
                 <v-divider />
                 <div class="faq-text">
-                    We begin our Sunday morning at 9:30AM with liturgical morning prayer. This morning prayer is largely composed of 
-                    the Psalms and scripture readings. Holy Communion, our primary service of the day, begins after morning prayer at 10AM.
-                    Immediately after Holy Communion we congregate in the parish hall for a coffee hour for conversation.
+                    We begin our Sunday morning at 9:30AM with the office of Morning Prayer. 
+                    This office is largely composed of the Psalms and scripture readings. Holy Communion, 
+                    our primary service of the day, begins after morning prayer at 10AM. Immediately after 
+                    Holy Communion we gather in the Parish Hall for fellowship and refreshments.
                 </div>
             </div>
             <div class="faq-title pa-5">
                 Will I be able to follow along?
                 <v-divider />
                 <div class="faq-text">
-                    When you arrive, one of our greeters will meet you at the door. The greeter can provide you with a booklet upon request
-                    that will help you along with the service. Feel to ask any of our church members any questions you might about how to 
-                    follow along and even ask our priest questions about the liturgy after the service.
+                    When you arrive, one of our greeters will meet you at the door. 
+                    The greeter can provide you with a booklet upon request that will 
+                    help you along with the service. Feel to ask any of our church members 
+                    any questions you might about how to follow along.  Our priest is happy 
+                    to visit with you about any questions you might have.
                 </div>
             </div>
             <div class="faq-title pa-5">
                 What Childrens Activities do you Have?
                 <v-divider />
                 <div class="faq-text">
-                    ...
+                    On most Sundays, our volunteer Sunday school teachers take children to the classroom during the 
+                    sermon for lessons and activities on the day's readings.  Visiting children are welcome to 
+                    participate but you may choose to keep them with you in church.
                 </div>
             </div>
             <div class="faq-title pa-5">
                 What Should I Wear?
                 <v-divider />
                 <div class="faq-text">
-                    We believe the church is holy ground and the eucharist is a holy ritual. We therefore kindly ask that you dress respectfully.
+                    We believe the church is holy ground and the Eucharist is a sacred moment. We simply ask that you dress with respect — 
+                    nothing overly formal, just something that feels appropriate for a holy place. Come as you are, and know you're welcome!
                 </div>
             </div>
             <div class="faq-title pa-5">
                 What if I am not Comfortable with Everything?
                 <v-divider />
                 <div class="faq-text">
-                    Often, visiting a liturgical service for the first time can be confusing. There may even be points in the liturgy that are
-                    confusing to new-comers. No one who visits is expected to participate. Participate as much as you are comfortable with.
+                   Often, visiting a liturgical service for the first time can be confusing. 
+                   There may even be points in the liturgy that are baffling to new-comers. Generally, we kneel for prayer, 
+                   sit for instruction, and stand for praise.  You may participate to the extent you're comfortable.
                 </div>
             </div>
             <div class="faq-title pa-5">
@@ -277,7 +284,7 @@ function goToWorship(){
                     <v-list bg-color="transparent">
                         <v-list-item prepend-icon="mdi-circle-small">You are a Baptized Christian.</v-list-item>
                         <v-list-item prepend-icon="mdi-circle-small">You Believe in the Real Presense of Jesus Christ in the Eucharist.</v-list-item>
-                        <v-list-item prepend-icon="mdi-circle-small">You have permission from your church leadership.</v-list-item>
+                        <v-list-item prepend-icon="mdi-circle-small">You are permitted by the discipline of your own denomination.</v-list-item>
                     </v-list>
                     If you do not meet these qualifications (or if you do not wish to participate) then you may still approach the altar ritual
                     with everyone else to receieve a blessing. To receive a blessing, simply cross your arms in an 'X' shape across you chest. 
@@ -288,15 +295,16 @@ function goToWorship(){
                 How do I Receive Communion?
                 <v-divider />
                 <div class="faq-text">
-                    ...
+                    You may receive in both kinds, in one kind, or by intinction.  If you receive in both kinds, 
+                    you may receive the host on your tongue or in your hand.  If you choose intinction, please leave the host 
+                    on your hand and the minister will dip it in the cub and place it on your tongue.
                 </div>
             </div>
             <div class="faq-title pa-5">
                 How do I join Holy Cross?
                 <v-divider />
                 <div class="faq-text">
-                    If you wish to join our community, then talk to our priest before or after the liturgy and he can instruct you in 
-                    confirmation or welcoming.
+                    If you wish to join our community, please talk to our priest before or after the service.
                 </div>
             </div>
         </v-container>
