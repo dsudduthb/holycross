@@ -17,6 +17,7 @@ function goto_yt_site(){
     <v-img
       :src="facebook"
       class="social-icon"
+      eager
       @click="goto_fb_site"
     />
   </v-col>
@@ -25,6 +26,7 @@ function goto_yt_site(){
     <v-img
       :src="youtube"
       class="social-icon"
+      eager
       @click="goto_yt_site"
     />
   </v-col>
