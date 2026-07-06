@@ -314,7 +314,7 @@ function goToWorship(){
         <v-container>
         <iframe
             align="center"
-            src="../../public/files/the-affirmation-of-st.-louis.pdf"
+            src="/files/the-affirmation-of-st.-louis.pdf"
             width="100%"
             height="800"
             style="border: none;"
