@@ -297,7 +297,7 @@ function goToWorship(){
                 <div class="faq-text">
                     You may receive in both kinds, in one kind, or by intinction.  If you receive in both kinds, 
                     you may receive the host on your tongue or in your hand.  If you choose intinction, please leave the host 
-                    on your hand and the minister will dip it in the cub and place it on your tongue.
+                    on your hand and the minister will dip it in the cup and place it on your tongue.
                 </div>
             </div>
             <div class="faq-title pa-5">
@@ -314,7 +314,23 @@ function goToWorship(){
         <v-container>
         <iframe
             align="center"
+            src="/files/liturgy-customary.pdf"
+            width="100%"
+            height="800"
+            style="border: none;"
+        ></iframe></v-container>
+        <v-container>
+        <iframe
+            align="center"
             src="/files/the-affirmation-of-st.-louis.pdf"
+            width="100%"
+            height="800"
+            style="border: none;"
+        ></iframe></v-container>
+        <v-container>
+        <iframe
+            align="center"
+            src="/files/apck-canons.pdf"
             width="100%"
             height="800"
             style="border: none;"
