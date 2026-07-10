@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import parish_photo2 from '../assets/parish_photo2.png'
 import christ_window from '../assets/building/christ.jpg'
 import mary_window from '../assets/building/theotokos.jpg'
@@ -10,6 +11,8 @@ import sanctuary from '../assets/the_space/sanctuary.jpg'
 import MassTimes from '../components/MassTimes.vue'
 import Province from '../components/Province.vue'
 import MediaBar from '../components/MediaBar.vue'
+
+const tab = ref('about')
 
 const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
@@ -26,7 +29,21 @@ const images = Object.values(modules)
     </div>
   </div>
 </v-img>
+<v-tabs
+    v-model="tab"
+    color="primary"
+>
+    <v-tab value="about">
+    At a Glance
+    </v-tab>
 
+    <v-tab value="resources">
+    Parish Resources
+    </v-tab>
+</v-tabs>
+
+<v-tabs-window v-model="tab">
+<v-tabs-window-item value="about">
 <v-container class="ma-10 mx-auto">
     <div class="about-text pa-10 ma-10">
         Our little parish was founded in 1978 by a small group of Christians seeking a traditional home. We are a diverse group: accountants, engineers, soldiers,
@@ -86,6 +103,18 @@ const images = Object.values(modules)
     </v-col>
   </v-row>
 </v-container>
+</v-tabs-window-item>
+<v-tabs-window-item value="resources">
+  <v-container>
+    <iframe
+        align="center"
+        src="/files/acolyte-customary.pdf"
+        width="100%"
+        height="800"
+        style="border: none;"
+    ></iframe></v-container>
+</v-tabs-window-item>
+</v-tabs-window>
 
 <MassTimes/>
 <Province/>

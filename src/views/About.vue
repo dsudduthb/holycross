@@ -17,7 +17,7 @@ import mitre from '../assets/mitre.png'
 import continuing from '../assets/continuing.jpg'
 import apck from '../assets/APCK_seal.png' 
 
-const tab = ref('overview')
+const tab = ref('who')
 
 const router = useRouter()
 
