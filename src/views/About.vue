@@ -67,19 +67,19 @@ function goToWorship(){
                 <div class="mt-5 mb-10" style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
                     <v-row>
                         <v-col class="text-center">
-                            <v-img :src="agnus_dei" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('christian-card')"/>
+                            <v-img :src="agnus_dei" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('christian-card')"/>
                             <div class="about-btn">Christian</div>
                         </v-col>
                         <v-col class="text-center">
-                            <v-img :src="mitre" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('catholic-card')"/>
+                            <v-img :src="mitre" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('catholic-card')"/>
                             <div class="about-btn">Catholic</div>
                         </v-col>
                         <v-col class="text-center">
-                            <v-img :src="ctbry_cross" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('anglican-card')"/>
+                            <v-img :src="ctbry_cross" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('anglican-card')"/>
                             <div class="about-btn">Anglican</div>
                         </v-col>
                         <v-col class="text-center">
-                            <v-img :src="apck2" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('continuing-card')"/>
+                            <v-img :src="apck2" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('continuing-card')"/>
                             <div class="about-btn">Continuing</div>
                         </v-col>
                     </v-row>
