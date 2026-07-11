@@ -248,7 +248,7 @@ const images = Object.values(modules)
 <MediaBar/>
 </template>
 
-<style scoped>
+<style>
 .about-text{
   font-family:'Times New Roman', Times, serif;
   color: #742b2b;
