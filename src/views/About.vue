@@ -17,9 +17,13 @@ import mitre from '../assets/mitre.png'
 import continuing from '../assets/continuing.jpg'
 import apck from '../assets/APCK_seal.png' 
 
+const router = useRouter()
+
 const tab = ref('who')
 
-const router = useRouter()
+const liturgy_customary = ref(false)
+const louis_canons = ref(false)
+const apck_canons = ref(false)
 
 function scrollTo(id) {
   document.getElementById(id).scrollIntoView({
@@ -63,19 +67,19 @@ function goToWorship(){
                 <div class="mt-5 mb-10" style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
                     <v-row>
                         <v-col class="text-center">
-                            <v-img :src="agnus_dei" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('christian-card')"/>
+                            <v-img :src="agnus_dei" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('christian-card')"/>
                             <div class="about-btn">Christian</div>
                         </v-col>
                         <v-col class="text-center">
-                            <v-img :src="mitre" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('catholic-card')"/>
+                            <v-img :src="mitre" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('catholic-card')"/>
                             <div class="about-btn">Catholic</div>
                         </v-col>
                         <v-col class="text-center">
-                            <v-img :src="ctbry_cross" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('anglican-card')"/>
+                            <v-img :src="ctbry_cross" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('anglican-card')"/>
                             <div class="about-btn">Anglican</div>
                         </v-col>
                         <v-col class="text-center">
-                            <v-img :src="apck2" class="card pa-7 mx-auto" style="width: 70%;" @click="scrollTo('continuing-card')"/>
+                            <v-img :src="apck2" class="pa-7 mx-auto" style="width: 70%;" @click="scrollTo('continuing-card')"/>
                             <div class="about-btn">Continuing</div>
                         </v-col>
                     </v-row>
@@ -311,30 +315,84 @@ function goToWorship(){
     </v-tabs-window-item>
 
     <v-tabs-window-item value="resources">
-        <v-container>
-        <iframe
-            align="center"
-            src="/files/liturgy-customary.pdf"
-            width="100%"
-            height="800"
-            style="border: none;"
-        ></iframe></v-container>
-        <v-container>
-        <iframe
-            align="center"
-            src="/files/the-affirmation-of-st.-louis.pdf"
-            width="100%"
-            height="800"
-            style="border: none;"
-        ></iframe></v-container>
-        <v-container>
-        <iframe
-            align="center"
-            src="/files/apck-canons.pdf"
-            width="100%"
-            height="800"
-            style="border: none;"
-        ></iframe></v-container>
+        <v-container align="center">  
+            <div v-if="!$vuetify.display.smAndDown">
+            <div>
+                <v-btn class="resource-text-button" variant="text" @click="liturgy_customary = !liturgy_customary" color="primary">
+                View the guide to the Liurgy
+                </v-btn>
+                <iframe
+                v-if="liturgy_customary"
+                src="/files/liturgy-customary.pdf"
+                width="100%"
+                height="800"
+                style="border: none;"
+                ></iframe>
+            </div>
+            </div>
+
+            <v-btn
+            v-else
+            color="primary"
+            href="/files/liturgy-customary.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Guide to the Liurgy
+            </v-btn>
+        </v-container>
+        <v-container align="center">  
+            <div v-if="!$vuetify.display.smAndDown">
+            <div>
+                <v-btn class="resource-text-button" variant="text" @click="louis_canons = !louis_canons" color="primary">
+                View the Affirmation of St. Louis
+                </v-btn>
+                <iframe
+                v-if="louis_canons"
+                src="/files/the-affirmation-of-st.-louis.pdf"
+                width="100%"
+                height="800"
+                style="border: none;"
+                ></iframe>
+            </div>
+            </div>
+
+            <v-btn
+            v-else
+            color="primary"
+            href="/files/the-affirmation-of-st.-louis.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            The Affirmation of St. Louis
+            </v-btn>
+        </v-container>
+        <v-container align="center">  
+            <div v-if="!$vuetify.display.smAndDown">
+            <div>
+                <v-btn class="resource-text-button" variant="text" @click="apck_canons = !apck_canons" color="primary">
+                View the Canons of the Anglican Province of Christ the King
+                </v-btn>
+                <iframe
+                v-if="apck_canons"
+                src="/files/apck-canons.pdf"
+                width="100%"
+                height="800"
+                style="border: none;"
+                ></iframe>
+            </div>
+            </div>
+
+            <v-btn
+            v-else
+            color="primary"
+            href="/files/apck-canons.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            APCK Canons
+            </v-btn>
+        </v-container>
     </v-tabs-window-item>
 </v-tabs-window>
 
@@ -396,4 +454,8 @@ font-size: 150%;
     font-style: normal;
 }
 
+.resource-text-button{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+}
 </style>

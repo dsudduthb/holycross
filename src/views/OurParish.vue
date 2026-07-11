@@ -13,6 +13,11 @@ import Province from '../components/Province.vue'
 import MediaBar from '../components/MediaBar.vue'
 
 const tab = ref('about')
+const acolyte_customary = ref(false)
+const altar_guild = ref(false)
+const lay_reader = ref(false)
+const penance_guide = ref(false)
+const examine_conscience = ref(false)
 
 const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
@@ -105,14 +110,136 @@ const images = Object.values(modules)
 </v-container>
 </v-tabs-window-item>
 <v-tabs-window-item value="resources">
-  <v-container>
-    <iframe
-        align="center"
-        src="/files/acolyte-customary.pdf"
-        width="100%"
-        height="800"
-        style="border: none;"
-    ></iframe></v-container>
+  <v-container align="center">  
+    <div v-if="!$vuetify.display.smAndDown">
+      <div>
+        <v-btn class="resource-text-button" variant="text" @click="lay_reader = !lay_reader" color="primary">
+          View Lay Reader Guide
+        </v-btn>
+        <iframe
+          v-if="lay_reader"
+          src="/files/lay-reader-guide.pdf"
+          width="100%"
+          height="800"
+          style="border: none;"
+        ></iframe>
+      </div>
+    </div>
+
+    <v-btn
+      v-else
+      color="primary"
+      href="/files/lay-reader-guide.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Lay Reader Guide PDF
+    </v-btn>
+  </v-container>
+  <v-container align="center">  
+    <div v-if="!$vuetify.display.smAndDown">
+      <div>
+        <v-btn class="resource-text-button" variant="text" @click="acolyte_customary = !acolyte_customary" color="primary">
+          View Acolyte Customary
+        </v-btn>
+        <iframe
+          v-if="acolyte_customary"
+          src="/files/acolyte-customary.pdf"
+          width="100%"
+          height="800"
+          style="border: none;"
+        ></iframe>
+      </div>
+    </div>
+
+    <v-btn
+      v-else
+      color="primary"
+      href="/files/acolyte-customary.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Acolyte Customary PDF
+    </v-btn>
+  </v-container>
+  <v-container align="center">  
+    <div v-if="!$vuetify.display.smAndDown">
+      <div>
+        <v-btn class="resource-text-button" variant="text" @click="altar_guild = !altar_guild" color="primary">
+          View Altar Guild Checklist
+        </v-btn>
+        <iframe
+          v-if="altar_guild"
+          src="/files/altar-guild-checklist.pdf"
+          width="100%"
+          height="800"
+          style="border: none;"
+        ></iframe>
+      </div>
+    </div>
+
+    <v-btn
+      v-else
+      color="primary"
+      href="/files/altar-guild-checklist.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Altar Guild Checklist
+    </v-btn>
+  </v-container>
+  <v-container align="center">  
+    <div v-if="!$vuetify.display.smAndDown">
+      <div>
+        <v-btn class="resource-text-button" variant="text" @click="examine_conscience = !examine_conscience" color="primary">
+          View Examination of Conscience
+        </v-btn>
+        <iframe
+          v-if="examine_conscience"
+          src="/files/examination-of-conscience-guide.pdf"
+          width="100%"
+          height="800"
+          style="border: none;"
+        ></iframe>
+      </div>
+    </div>
+
+    <v-btn
+      v-else
+      color="primary"
+      href="/files/examination-of-conscience-guide.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Examination of Conscience
+    </v-btn>
+  </v-container>
+  <v-container align="center">  
+    <div v-if="!$vuetify.display.smAndDown">
+      <div>
+        <v-btn class="resource-text-button" variant="text" @click="penance_guide = !penance_guide" color="primary">
+          View Penance Guide
+        </v-btn>
+        <iframe
+          v-if="penance_guide"
+          src="/files/penance-liturgy.pdf"
+          width="100%"
+          height="800"
+          style="border: none;"
+        ></iframe>
+      </div>
+    </div>
+
+    <v-btn
+      v-else
+      color="primary"
+      href="/files/penance-liturgy.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Penance Guide
+    </v-btn>
+  </v-container>
 </v-tabs-window-item>
 </v-tabs-window>
 
@@ -201,5 +328,10 @@ const images = Object.values(modules)
   .parish-carousel {
     border-radius: 12px;
   }
+}
+
+.resource-text-button{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
 }
 </style>
