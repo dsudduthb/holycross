@@ -7,9 +7,9 @@ import MassTimes from '../components/MassTimes.vue'
 import MediaBar from '../components/MediaBar.vue'
 
 import CREED from '../assets/creed.txt?raw'
-import creed_image from '../assets/priest_kneeling_mass.png'
+import creed_image from '../assets/priest_at_altar_in_cope.jpg'
 import anglicanism_image from '../assets/washington_cathedral.png'
-import catholicism_image from '../assets/augustine_of_canterbury.png'
+import catholicism_image from '../assets/gospel_procession.jpg'
 import agnus_dei from '../assets/agnus_dei.png'
 import ctbry_cross from '../assets/canterbury_cross.png'
 import apck2 from '../assets/APCK_alt.png'
@@ -40,6 +40,7 @@ function goToWorship(){
 <v-tabs
     v-model="tab"
     color="primary"
+    align-tabs="center"
 >
     <v-tab value="who">
     Who Are We?
@@ -119,8 +120,8 @@ function goToWorship(){
                                 The word "Catholic" comes from a greek word meaning "apart of the whole." The Catholic religion therefore can be was described as 
                                 Saint Vincent did: "what has been believed everywhere, always, and by all."
                                 We seek to live the Apostolic faith as it has been passed down through scripture and tradition.
-                                The aim of the Catholic Church is unity with our Lord, Jesus Christ. The height of the Catholic worship is the mass, 
-                                which we participate in every Sunday morning at 10AM.
+                                The aim of the Catholic Church is unity with our Lord, Jesus Christ. The height of the Catholic worship is the Mass 
+                                (a.k.a. the Divine Liturgy or the Eucharist), which we participate in every Sunday morning at 10AM.
                             </div>
                             <v-list class="bg-primary">
                                 <v-list-item prepend-icon="mdi-circle-small">
