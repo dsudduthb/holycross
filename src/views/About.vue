@@ -120,8 +120,8 @@ function goToWorship(){
                                 The word "Catholic" comes from a greek word meaning "apart of the whole." The Catholic religion therefore can be was described as 
                                 Saint Vincent did: "what has been believed everywhere, always, and by all."
                                 We seek to live the Apostolic faith as it has been passed down through scripture and tradition.
-                                The aim of the Catholic Church is unity with our Lord, Jesus Christ. The height of the Catholic worship is the mass, 
-                                which we participate in every Sunday morning at 10AM.
+                                The aim of the Catholic Church is unity with our Lord, Jesus Christ. The height of the Catholic worship is the Mass 
+                                (a.k.a. the Divine Liturgy or the Eucharist), which we participate in every Sunday morning at 10AM.
                             </div>
                             <v-list class="bg-primary">
                                 <v-list-item prepend-icon="mdi-circle-small">
