@@ -37,6 +37,7 @@ const images = Object.values(modules)
 <v-tabs
     v-model="tab"
     color="primary"
+    align-tabs="center"
 >
     <v-tab value="about">
     At a Glance
@@ -281,10 +282,10 @@ const images = Object.values(modules)
 }
 
 .banner-text {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Celtic Font';
   text-align: center;
   color: white;
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(2rem, 6vw, 4rem);
 }
 
 @media (max-width: 600px) {

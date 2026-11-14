@@ -373,6 +373,13 @@ import MediaBar from '../components/MediaBar.vue'
 <MediaBar/>
 </template>
 <style>
+.about-text{
+  font-family:'Times New Roman', Times, serif;
+  color: #742b2b;
+  font-size: x-large;
+  font-style: italic;
+  text-align: center;
+}
 .sacra-title{
     font-size: xx-large;
     color: #742b2b;

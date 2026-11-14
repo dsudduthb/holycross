@@ -40,6 +40,7 @@ function goToWorship(){
 <v-tabs
     v-model="tab"
     color="primary"
+    align-tabs="center"
 >
     <v-tab value="who">
     Who Are We?
