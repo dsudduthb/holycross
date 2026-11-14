@@ -20,6 +20,11 @@ import incense from '../assets/the_space/incense.jpg'
 import candle from '../assets/the_space/burning_candle.jpg'
 import vestments from '../assets/the_space/vestments.jpg'
 
+import evensong from '../assets/the_space/evensong.jpg'
+import mattins from '../assets/the_space/mattins.jpg'
+import eucharist from '../assets/the_space/liturgy_of_the_eucharist.jpg'
+import word from '../assets/the_space/liturgy_of_the_word.jpg'
+
 import Province from '../components/Province.vue'
 import MassTimes from '../components/MassTimes.vue'
 import MediaBar from '../components/MediaBar.vue'
@@ -50,6 +55,10 @@ const tab = ref('sacraments')
 
     <v-tab value="senses">
       The Senses
+    </v-tab>
+
+    <v-tab value="liturgies">
+      The Liturgies
     </v-tab>
 </v-tabs>
 
@@ -390,7 +399,8 @@ const tab = ref('sacraments')
     </v-row>
     </v-container>
   </v-tabs-window-item>
-    <v-tabs-window-item value="senses">
+
+  <v-tabs-window-item value="senses">
     <v-container width="80%">
       <v-divider>
           <div class="sacra-title" style="font-style: italic;">
@@ -460,6 +470,109 @@ const tab = ref('sacraments')
             representative of the washing of their sins. The garments may change in look for the forms of Church liturgy (Divine Liturgy, 
             Divine Offices, etc.). The colors of the vestments change with the seasons of the Church and the feasts
             celebrated on the days of worship which bring the eyes into the worship of God.
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+
+  </v-tabs-window-item>
+
+  <v-tabs-window-item value="liturgies">
+    <v-container width="80%">
+      <v-divider>
+          <div class="sacra-title" style="font-style: italic;">
+              The Divine Liturgy
+          </div>
+      </v-divider>
+    </v-container>
+
+    <v-container class="ma-10 mx-auto" width="auto">
+      <div class="about-text">
+          "Whoso eateth my flesh, and drinketh my blood, hath eternal life; and I will raise him up at the last day. 
+          For my flesh is meat indeed, and my blood is drink indeed. He that eateth my flesh, and drinketh my blood, 
+          dwelleth in me, and I in him." - John 6:54-56
+      </div>
+    </v-container>
+
+    <v-container class="my-10 mx-auto" max-width="1200">
+      <v-row>
+        <v-col cols="12" md="7">
+          <v-img :src="word" class="space-img"/>
+        </v-col>
+        <v-col cols="12" md="5">
+          <div class="space-title">Liturgy of the Word</div>
+          <v-divider></v-divider>
+          <div class="sacra-text">
+            The Mass (also known as the Divine Liturgy) has been separated into two halves since the Apostles.
+            The first half is known as "the liturgy of the word." In this first half is read the scriptures to
+            the people and the Creed is recited together for preparation of the great worship.
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" md="7">
+          <v-img :src="eucharist" class="space-img"/>
+        </v-col>
+        <v-col cols="12" md="5">
+          <div class="space-title">Liturgy of the Eucharist</div>
+          <v-divider></v-divider>
+          <div class="sacra-text">
+            The second half of the Mass is called "the liturgy of the eucharist." Eucharist is a Greek word which
+            means "thanksgiving." The eucharist is the sacrificial meal that Christ instituted at the last supper
+            in the paschal feast. In the liturgy of the eucharist, we confess our transgressions and are absolved
+            of our sins before we eat of the blessed sacrament. Then the priest consecrates the offered bread and 
+            wine and the we eat of the sacrament of the altar. This is the height of Christian worship and offering.
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container width="80%">
+      <v-divider>
+          <div class="sacra-title" style="font-style: italic;">
+              The Divine Office
+          </div>
+      </v-divider>
+    </v-container>
+
+    <v-container class="ma-10 mx-auto" width="auto">
+      <div class="about-text">
+          "From the rising of the sun unto the going down of the same the LORD'S name is to be praised" - Psalm 113:3
+      </div>
+    </v-container>
+
+    <v-container class="my-10 mx-auto" max-width="1200">
+      <v-row>
+        <v-col cols="12" md="7">
+          <v-img :src="mattins" class="space-img"/>
+        </v-col>
+        <v-col cols="12" md="5">
+          <div class="space-title">Mattins</div>
+          <v-divider></v-divider>
+          <div class="sacra-text">
+            The Divine Office (also known as the Daily Office) is the normative prayer life of the Church. The day
+            is separated into seven separate "hours" of prayer. Mattins, or "Morning Prayer", is the first of the 
+            hours. The service contains the confession and absolution of sins, the reciting of the Creed, the 
+            reading of scriptures, and prayers for the Church and the world. The prayers of the morning office focus
+            on preparing us for worship or a days work and being righteous in all that we do.
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" md="7">
+          <v-img :src="evensong" class="space-img"/>
+        </v-col>
+        <v-col cols="12" md="5">
+          <div class="space-title">Evensong</div>
+          <v-divider></v-divider>
+          <div class="sacra-text">
+            Evensong is an old English word for the office of "Vespers" which is the name for the evening office in
+            other traditions. Evensong, or "Evening Prayer" as it is often called, is technically the sixth hour of 
+            prayer in the seven hours, but the seven hours are genrally unfeasable for laymen to read daily so the
+            Anglican tradition has provided her children with a consolidation of the hours into only Morning (mattins) 
+            and Evening (evensong) prayer so the laity may join the Church in prayer. the evening office follows the same pattern
+            as its morning counterpart though the prayers are more focused on protection during sleep and preparation
+            for death as the evening draws near.
           </div>
         </v-col>
       </v-row>
