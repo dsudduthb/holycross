@@ -7,9 +7,9 @@ import MassTimes from '../components/MassTimes.vue'
 import MediaBar from '../components/MediaBar.vue'
 
 import CREED from '../assets/creed.txt?raw'
-import creed_image from '../assets/priest_kneeling_mass.png'
+import creed_image from '../assets/priest_at_altar_in_cope.jpg'
 import anglicanism_image from '../assets/washington_cathedral.png'
-import catholicism_image from '../assets/augustine_of_canterbury.png'
+import catholicism_image from '../assets/gospel_procession.jpg'
 import agnus_dei from '../assets/agnus_dei.png'
 import ctbry_cross from '../assets/canterbury_cross.png'
 import apck2 from '../assets/APCK_alt.png'
@@ -40,6 +40,7 @@ function goToWorship(){
 <v-tabs
     v-model="tab"
     color="primary"
+    align-tabs="center"
 >
     <v-tab value="who">
     Who Are We?
