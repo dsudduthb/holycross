@@ -18,6 +18,7 @@ const altar_guild = ref(false)
 const lay_reader = ref(false)
 const penance_guide = ref(false)
 const examine_conscience = ref(false)
+const funeral_checklist = ref(false)
 
 const modules = import.meta.glob('/src/assets/parish_life/*', {
   eager: true,
@@ -239,6 +240,33 @@ const images = Object.values(modules)
       rel="noopener noreferrer"
     >
       Penance Guide
+    </v-btn>
+  </v-container>
+
+  <v-container align="center">  
+    <div v-if="!$vuetify.display.smAndDown">
+      <div>
+        <v-btn class="resource-text-button" variant="text" @click="funeral_checklist= !funeral_checklist" color="primary">
+          View Funeral Planning Checklist
+        </v-btn>
+        <iframe
+          v-if="funeral_checklist"
+          src="docs\files\funeral_planning_checklist.pdf"
+          width="100%"
+          height="800"
+          style="border: none;"
+        ></iframe>
+      </div>
+    </div>
+
+    <v-btn
+      v-else
+      color="primary"
+      href="docs\files\funeral_planning_checklist.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Funeral Planning Checklist
     </v-btn>
   </v-container>
 </v-tabs-window-item>
