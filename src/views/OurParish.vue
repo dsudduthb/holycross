@@ -251,7 +251,7 @@ const images = Object.values(modules)
         </v-btn>
         <iframe
           v-if="funeral_checklist"
-          src="docs/files/funeral_planning_checklist.pdf"
+          src="/files/funeral-planning-checklist.pdf"
           width="100%"
           height="800"
           style="border: none;"
@@ -262,7 +262,7 @@ const images = Object.values(modules)
     <v-btn
       v-else
       color="primary"
-      href="docs/files/funeral_planning_checklist.pdf"
+      href="/files/funeral-planning-checklist.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >
